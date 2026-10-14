@@ -1,0 +1,26 @@
+{
+  "name": "jetstream-v2-archive-repro",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reproductions of our Jetstream v2 hosted-archive findings (as of 2026-10-14)",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "overview": "node src/archive-overview.ts",
+    "quota": "node src/quota.ts",
+    "markers": "node src/marker-plans.ts",
+    "amplification": "node src/amplification.ts",
+    "coverage:migrated": "node src/coverage-migrated.ts",
+    "coverage:bridgy": "node src/coverage-bridgy.ts",
+    "all": "node src/run-all.ts",
+    "check": "node src/run-all.ts --check",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
