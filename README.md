@@ -2,19 +2,19 @@
 
 Scripts that reproduce what we found while backfilling three collections from Bluesky's hosted Jetstream v2 archive (`jetstream1.us-east.bsky.network`), as of 2026-10-14. They accompany the write-up "Jetstream v2 archive backfill findings". Each finding has one TypeScript script under `src/`. Each script writes JSON to `results/<UTC date>/<name>.json` and has a `--check` mode that exits non-zero and names the assertion that no longer holds.
 
-Numbers below were measured on 2026-10-14. "Recorded" means the result JSON is in `results/2026-10-14/`. The rest come from the ad-hoc scripts these were adapted from, run the same day.
-
-> **Recorded outputs are incomplete.** `results/2026-10-14/` holds JSON for findings 5 and 6 (`coverage_migrated.json`, `coverage_bridgy.json`), which need no key. It does not yet hold JSON for the scripts that need an archive key (findings 1–4, and `--archive-count` in 6). Until it does, the archive numbers below come from the ad-hoc scripts. Run `npm run all -- --costly --out results/2026-10-14` with a key to fill it in, then remove this note.
+Numbers below come from one run of `npm run all -- --costly --check --refresh` against the live archive on 2026-10-14 between 16:14 and 16:32 UTC. Every check passed. The result JSON is in `results/2026-10-14/`. The archive keeps growing, so tail-window and per-collection numbers drift a little from run to run.
 
 ## Findings
 
 ### 1. The archive starts on 2026-10-02 and is almost all one bulk import (`npm run overview`, `src/archive-overview.ts`)
 
-`listSegments` returns 7,439 sealed segments: 25.8B events and 1.98 TB. The first segment was witnessed at 2026-10-02 20:53:35 UTC. Segments witnessed on 2026-10-03 to 2026-10-06 hold 25.48B events and 1.945 TB, which is 98.4% of the bytes. Since then the archive has grown by about 3.5 GB and 35M events a day. On 2026-10-14 the status page reported `v0.4.2 (commit f582c11)`, 25,818,750,521 events, a witnessed range starting 2026-10-02 20:53:35, and a 1d 12h cursor lookback. By 14:15 UTC the same day it reported `v0.4.4 (commit d4db8c0)`. Anything that was not imported in that window has to come from the live stream after 2026-10-02.
+`listSegments` returns 7,443 sealed segments: 25.82B events and 1.978 TB. The first segment was witnessed at 2026-10-02 20:53:35 UTC. Segments witnessed on 2026-10-03 to 2026-10-06 hold 25.48B events and 1.945 TB, which is 98.3% of the bytes. Since then the archive has grown by about 3.5 GB and 35M events a day. Early on 2026-10-14 the status page reported `v0.4.2 (commit f582c11)`. By 14:15 UTC it reported `v0.4.4 (commit d4db8c0)`, and at 16:14 UTC it showed 25,823,086,362 events, a witnessed range starting 2026-10-02 20:53:35, and a 1d 12h cursor lookback. Anything that was not imported in that window has to come from the live stream after 2026-10-02.
 
 ### 2. The per-key quota is charged when getBlock redirects, not when bytes move (`npm run quota`, `src/quota.ts`)
 
-Every archive response carries `headwind-quota-burst-bytes: 1000000000`, `headwind-quota-refill-bytes: 2000000` and `headwind-quota-refill-period-seconds: 1`. That is a 1 GB burst refilling at 2 MB/s, for a key created on 2026-10-13. `getBlock` answers `307` with a signed CDN URL. Issuing `getBlock` requests without ever following the redirect still drains the bucket. After roughly a burst's worth of blocks (estimated from `listSegments` sizes), the next request gets `429 {"error":"byte limit exceeded"}` with a `Retry-After`. Nothing was downloaded. The bytes are charged when the redirect is issued.
+Every archive response carries `headwind-quota-burst-bytes: 1000000000`, `headwind-quota-refill-bytes: 2000000` and `headwind-quota-refill-period-seconds: 1`. That is a 1 GB burst refilling at 2 MB/s, for a key created on 2026-10-13. `getBlock` answers `307` with a signed CDN URL. Issuing `getBlock` requests without ever following the redirect still drains the bucket. Starting from a full bucket, 8 concurrent requests got 3,235 redirects in 20 s, and then `429 {"error":"byte limit exceeded"}` with `Retry-After: 1`. Nothing was downloaded. The bytes are charged when the redirect is issued.
+
+We do not know the exact charge per redirect. Our size estimate for the 3,235 redirected blocks is about 1.37 GB, more than the 1 GB burst plus 20 s of refill. So either the charge is less than the full block size or our per-block estimate is high (see Methodology). Following the redirects for 60 s afterwards sustained 1.97 MB/s, which matches the refill rate.
 
 The default policy in bps-website (`server/src/apikeys/jetstream-policy.ts`, raised in bluesky-social/bps-website#32) is 100 TiB per 30 days with a 64 GiB burst, about 42 MB/s. Our key got 1 GB and 2 MB/s, roughly 1/20 of that rate and 1/64 of that burst.
 
@@ -24,31 +24,31 @@ The default policy in bps-website (`server/src/apikeys/jetstream-policy.ts`, rai
 
 | DIDs | Planned | Est. download |
 |---|---|---|
-| none | 748 blocks + 6 whole segments | 1.73 GB |
-| 10,000 | 740 blocks + 6 whole segments | 1.72 GB |
-| 1,000 | 2,260 blocks + 2 whole segments | 1.32 GB |
-| 100 | 564 blocks | 0.24 GB |
-| 10 | 50 blocks | 0.02 GB |
+| none | 748 blocks + 7 whole segments | 1.84 GB |
+| 10,000 | 740 blocks + 7 whole segments | 1.83 GB |
+| 1,000 | 2,782 blocks + 1 whole segment | 1.30 GB |
+| 100 | 638 blocks | 0.28 GB |
+| 10 | 48 blocks | 0.02 GB |
 
-At 10,000 DIDs the plan is within 1% of the unfiltered one: the per-block DID blooms are saturated, so the filter prunes nothing. The same plan over the whole archive (no `afterSeq`) with 10,000 DIDs returns `502 {"error":"upstream unavailable"}`, and did so every time we tried.
+At 10,000 DIDs the plan is within 1% of the unfiltered one: the per-block DID blooms are saturated, so the filter prunes nothing. The same plan over the whole archive (no `afterSeq`) with 10,000 DIDs returns `502 {"error":"upstream unavailable"}` after about 30 s, and did so every time we tried.
 
 ### 4. Rare collections download whole blocks for a few events each (`npm run amplification`, `src/amplification.ts`)
 
-A commit plan for one collection returns every block whose collection index contains that NSID. Blocks average about 311 KB compressed (4,096 events).
+A commit plan for one collection returns every block whose collection index contains that NSID. A block holds 4,096 events. Averaged over whole segments, a block is about 311 KB compressed. The blocks these plans pick were bigger: 50 sampled blocks per collection averaged 349 KB (whtwnd) and 387 KB (publication).
 
-| Collection | Events (status page) | Blocks | Est. download | Bytes per event |
-|---|---|---|---|---|
-| `com.whtwnd.blog.entry` | 6,811 | 1,486 | ~0.46 GB | ~68 KB |
-| `site.standard.publication` | 17,600 | 13,081 | ~4.1 GB | ~231 KB |
-| `site.standard.document` | 3.90M | 71,800 | ~22 GB | ~5.7 KB |
+| Collection | Events (status page) | Blocks | Est. download | Bytes per event (estimate) | Bytes per event (50-block sample) |
+|---|---|---|---|---|---|
+| `com.whtwnd.blog.entry` | 6,882 | 1,555 | ~0.56 GB | ~81 KB | ~143 KB |
+| `site.standard.publication` | 17,596 | 13,081 | ~4.25 GB | ~242 KB | ~293 KB |
+| `site.standard.document` | 3.90M | 71,800 | ~22 GB | ~5.7 KB | not sampled |
 
-On 2026-10-14 at 12:47 UTC the status page's collections tab showed `com.whtwnd.blog.entry` at 6,879 events in 1,554 blocks across 952 segments, `site.standard.publication` at 17,606 events in 13,087 blocks across 4,825 segments, and `site.standard.document` at 3,901,510 events in 72,091 blocks across 4,127 segments. At the 2 MB/s refill rate, the publication replay alone takes about 34 minutes of quota for about 18k records. bluesky-social/jetstream#192 describes this over-send as inherent to block-granular replay. We include it for the cost numbers, not as a bug.
+The estimate column divides the plan's estimated bytes by the status page's event count. The sample column divides bytes actually downloaded by the matching commit events decoded from those blocks. In the sample, a planned block held a median of 1 matching event. The `site.standard.document` row is from an earlier ad-hoc run on the same day; `amplification` plans it only with `--with-document`. At the 2 MB/s refill rate, the publication replay alone takes about 35–45 minutes of quota for about 18k records. bluesky-social/jetstream#192 describes this over-send as inherent to block-granular replay. We include it for the cost numbers, not as a bug.
 
 ### 5. Repos that changed PDS before the archive began are missing from it (`npm run coverage:migrated`, `src/coverage-migrated.ts`)
 
 912 DIDs have `site.standard.publication` records on their PDS but no event in the archive. The script draws a seeded sample of 60, plus 20 DIDs that are present in the archive as a control, and looks each one up on the status page and in the PLC audit log.
 
-Recorded run (`results/2026-10-14/coverage_migrated.json`, 14:15 UTC, seed 1):
+Recorded run (`results/2026-10-14/coverage_migrated.json`, 16:25 UTC, seed 1; an earlier run at 14:15 UTC gave identical counts):
 
 - 52 of the 60 are backfill `pending`, all with `Last attempted: never`, at the PDS the status page shows.
 - 50 of those 52 had left that PDS before the archive began, between 2025-07-25 and 2026-09-30. They moved mostly to eurosky.social (29), blacksky.app (9), selfhosted.social (3), npmx.social (2) and northsky.social (2). For the other 2, the PDS the status page shows is still their current one.
@@ -59,22 +59,24 @@ The original investigation drew a different sample of 60 with Python's sampler a
 
 ### 6. Large Bridgy Fed repos are `complete` but hold a small fraction of their records (`npm run coverage:bridgy`, `src/coverage-bridgy.ts`)
 
-The 8 DIDs in `fixtures/bridgy_partial_dids.txt` all live on `atproto.brid.gy`. The status page shows each as `Backfill: complete`. Its live repo verification shows `Result: Match failure` ("local reconstructed MST root does not match authoritative repo root"), and the local root differs from brid.gy's. Repos that are present in the archive show `Result: Match`, with the same local and authoritative rev and root. So `Match failure` does mark these repos out. We verified this on 2026-10-14 against 5 control repos and `did:plc:wc3uljbzjvw6xqq3b2yoirgf`.
+The 8 DIDs in `fixtures/bridgy_partial_dids.txt` all live on `atproto.brid.gy`. The status page shows each as `Backfill: complete`. Its live repo verification shows `Result: Match failure` ("local reconstructed MST root does not match authoritative repo root"), and the local root differs from brid.gy's. Repos that are present in the archive show `Result: Match`, with the same local and authoritative rev and root. So `Match failure` does mark these repos out. We checked this by hand on 2026-10-14 against 5 control repos and `did:plc:wc3uljbzjvw6xqq3b2yoirgf`. The scripts do not re-check it: in the recorded `coverage:migrated` run, the status page rate-limited verification for all 20 control lookups, so they carry no `Result`.
 
-Recorded run (`results/2026-10-14/coverage_bridgy.json`, 14:14 UTC):
+Recorded run (`results/2026-10-14/coverage_bridgy.json`, 16:32 UTC, with `--archive-count 2`):
 
-| DID | Local records (status page) | `site.standard.document` on brid.gy | Ratio |
-|---|---|---|---|
-| did:plc:nng24p5wvmvzrtn7w2hoyfdq | 412 | 30,053 | 1.4% |
-| did:plc:u7ffgmu5yvsqbhws4xuw4sr3 | 1,284 | 30,353 | 4.2% |
-| did:plc:hdmzvl3efru5o76jr6uoz65a | 1,176 | 29,879 | 3.9% |
-| did:plc:wc3uljbzjvw6xqq3b2yoirgf | 324 | 29,176 | 1.1% |
-| did:plc:avpncyh6y7jvfug6jhvclq3v | 2,286 | 29,983 | 7.6% |
-| did:plc:27ynjnbos35i76bn7am3hgdq | 2,090 | 29,809 | 7.0% |
-| did:plc:vzwxydbnqygisw42xlddrqfz | 2,580 | 29,731 | 8.7% |
-| did:plc:pgcgxp22ajr7fkrrqogsxp2y | 2,096 | 28,474 | 7.4% |
+| DID | Local records (status page) | `site.standard.document` events in the archive | `site.standard.document` on brid.gy | Ratio |
+|---|---|---|---|---|
+| did:plc:nng24p5wvmvzrtn7w2hoyfdq | 412 | 206 | 30,063 | 0.7% (archive) |
+| did:plc:u7ffgmu5yvsqbhws4xuw4sr3 | 1,284 | 642 | 30,363 | 2.1% (archive) |
+| did:plc:hdmzvl3efru5o76jr6uoz65a | 1,176 | — | 29,889 | 3.9% (local) |
+| did:plc:wc3uljbzjvw6xqq3b2yoirgf | 324 | — | 29,186 | 1.1% (local) |
+| did:plc:avpncyh6y7jvfug6jhvclq3v | 2,286 | — | 30,004 | 7.6% (local) |
+| did:plc:27ynjnbos35i76bn7am3hgdq | 2,090 | — | 29,819 | 7.0% (local) |
+| did:plc:vzwxydbnqygisw42xlddrqfz | 2,600 | — | 29,741 | 8.7% (local) |
+| did:plc:pgcgxp22ajr7fkrrqogsxp2y | 2,096 | — | 28,484 | 7.4% (local) |
 
-All 8 are `complete` with `Match failure`. For 7 of them the local rev is also behind brid.gy's. For `did:plc:vzwxydbnqygisw42xlddrqfz` the revs are equal but the roots still differ. `com.atproto.sync.getRepo` on brid.gy answers 302 to `bridgy-hubble.microcosm.blue` for all 8, and that host answers `400 {"error":"RepoNotFound","message":"repo not synchronized yet"}`, so a full-repo backfill through it is not possible. Our HappyView archive replay ended with 162–1,141 documents per repo, against about 29,000 on the PDS. (`local records` counts the whole repo, not one collection. The archive-side count, `--archive-count`, needs a key and is not recorded yet.)
+The archive column decodes every block the plan returns for that DID and collection and counts matching commit events. It was run for the first 2 DIDs only, because each costs a few hundred blocks of quota.
+
+All 8 are `complete` with `Match failure`. For 7 of them the local rev is also behind brid.gy's. For `did:plc:vzwxydbnqygisw42xlddrqfz` the revs are equal but the roots still differ. `com.atproto.sync.getRepo` on brid.gy answers 302 to `bridgy-hubble.microcosm.blue` for all 8, and that host answers `400 {"error":"RepoNotFound","message":"repo not synchronized yet"}`, so a full-repo backfill through it is not possible. Our HappyView archive replay ended with 162–1,141 documents per repo, against about 29,000 on the PDS. (`local records` counts the whole repo, not one collection.)
 
 ## End-to-end runs
 
@@ -146,7 +148,7 @@ A FAIL means the behaviour changed. That is what a fix looks like for 2, 3, 5 an
 
 ## Methodology
 
-- **Estimated bytes.** Plans list whole segments (`mode:"segment"`) or block ranges (`mode:"blocks"`). A whole segment counts as its `sizeBytes` from `listSegments`. A block counts as `sizeBytes / ceil(eventCount / 4096)` of its segment: the segment's average block, since Jetstream cuts a block every 4,096 events. Actual blocks vary, and sampled downloads (`amplification --sample`) measure them directly. Plan entries for segments sealed after the `listSegments` cache was fetched are counted in `entries_not_in_segment_cache` and excluded from the byte totals. Use `--refresh` to avoid that.
+- **Estimated bytes.** Plans list whole segments (`mode:"segment"`) or block ranges (`mode:"blocks"`). A whole segment counts as its `sizeBytes` from `listSegments`. A block counts as `sizeBytes / ceil(eventCount / 4096)` of its segment: the segment's average block, since Jetstream cuts a block every 4,096 events. Actual blocks vary. In the recorded run the blocks `amplification --sample` downloaded were 12–24% larger than this estimate, so the estimated byte figures are likely low. Plan entries for segments sealed after the `listSegments` cache was fetched are counted in `entries_not_in_segment_cache` and excluded from the byte totals. Use `--refresh` to avoid that.
 - **Tail windows.** "Last 12 h" is measured back from the newest sealed segment's `maxWitnessedAt`. `afterSeq` is the `maxSeq` of the newest segment that ended before the cutoff, so the window does not depend on how stale the cache is.
 - **Plans** are paged the way the Go client pages them: `afterSeq = plannedThroughSeq`, with `beforeSeq` pinned to the first page's `sealedTipSeq`. Latency is wall-clock per page, including network time.
 - **Drain.** `quota --drain` cycles `getBlock` over block indexes of the 40 newest segments, 8 at a time. It never follows the 307 and stops at the first 429. Its byte figure is the estimated size of the blocks those redirects point to, not bytes transferred, because nothing is transferred.

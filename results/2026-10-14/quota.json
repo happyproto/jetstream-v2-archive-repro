@@ -1,0 +1,103 @@
+{
+ "script": "quota",
+ "generated_at": "2026-10-14T16:24:58Z",
+ "segments_fetched_at": "2026-10-14T16:14:56Z",
+ "headers_probe": {
+  "request": "planSnapshot kinds=[commit] collections=[com.whtwnd.blog.entry] (last ~1 h)",
+  "status": 200,
+  "elapsed_s": 0.153,
+  "quota_headers": {
+   "headwind-quota-burst-bytes": "1000000000",
+   "headwind-quota-refill-bytes": "2000000",
+   "headwind-quota-refill-period-seconds": "1"
+  },
+  "all_headers": {
+   "cache-control": "private, no-cache",
+   "content-length": "158",
+   "content-type": "application/json",
+   "date": "Wed, 14 Oct 2026 16:23:38 GMT",
+   "headwind-quota-burst-bytes": "1000000000",
+   "headwind-quota-refill-bytes": "2000000",
+   "headwind-quota-refill-period-seconds": "1",
+   "strict-transport-security": "max-age=63072000"
+  }
+ },
+ "drain": {
+  "issued": 3240,
+  "redirects": 3235,
+  "est_bytes": 1367784765,
+  "est_GB": 1.368,
+  "statuses": {
+   "307": 3235,
+   "429": 5
+  },
+  "first429": {
+   "after_redirects": 3232,
+   "est_bytes_before": 1366478253,
+   "seconds_in": 19.96,
+   "status": 429,
+   "body": "{\"error\":\"byte limit exceeded\"}",
+   "retry_after": "1",
+   "headers": {
+    "cache-control": "no-store",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Wed, 14 Oct 2026 16:23:58 GMT",
+    "headwind-quota-burst-bytes": "1000000000",
+    "headwind-quota-refill-bytes": "2000000",
+    "headwind-quota-refill-period-seconds": "1",
+    "retry-after": "1",
+    "strict-transport-security": "max-age=63072000"
+   }
+  },
+  "last_redirect_quota_headers": {
+   "headwind-quota-burst-bytes": "1000000000",
+   "headwind-quota-refill-bytes": "2000000",
+   "headwind-quota-refill-period-seconds": "1"
+  },
+  "other": [],
+  "elapsed_s": 20.01,
+  "concurrency": 8,
+  "followed_redirects": false,
+  "cap": 20000
+ },
+ "follow": {
+  "requests": 738,
+  "bytes": 119319520,
+  "statuses": {
+   "307": 332,
+   "429": 406
+  },
+  "throttled_wait_s": 406,
+  "seconds": 60.5,
+  "MB_per_s": 1.972,
+  "concurrency": 8
+ },
+ "checks": [
+  {
+   "name": "headwind-quota-refill-bytes == 2000000",
+   "pass": true,
+   "detail": "got \"2000000\""
+  },
+  {
+   "name": "headwind-quota-refill-period-seconds == 1",
+   "pass": true,
+   "detail": "got \"1\""
+  },
+  {
+   "name": "headwind-quota-burst-bytes == 1000000000",
+   "pass": true,
+   "detail": "got \"1000000000\""
+  },
+  {
+   "name": "drain: 429 without downloading any block",
+   "pass": true,
+   "detail": "3235 redirects (~1.368 GB est.) then 429"
+  },
+  {
+   "name": "drain: 429 body is {\"error\":\"byte limit exceeded\"}",
+   "pass": true,
+   "detail": "body=\"{\\\"error\\\":\\\"byte limit exceeded\\\"}\" retry-after=\"1\""
+  }
+ ]
+}

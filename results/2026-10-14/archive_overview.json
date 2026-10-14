@@ -1,0 +1,157 @@
+{
+ "script": "archive_overview",
+ "generated_at": "2026-10-14T16:14:57Z",
+ "archive": {
+  "segments_fetched_at": "2026-10-14T16:14:56Z",
+  "segments": 7443,
+  "first_segment": {
+   "name": "seg_0000000000.jss",
+   "index": 0,
+   "minSeq": 1,
+   "minWitnessedAt": 1790974415892009
+  },
+  "archive_start": "2026-10-02T20:53:35Z",
+  "archive_end": "2026-10-14T16:02:55Z",
+  "total_events": 25822750415,
+  "total_bytes": 1978162432772,
+  "total_TB": 1.978,
+  "import_days": [
+   "2026-10-03",
+   "2026-10-04",
+   "2026-10-05",
+   "2026-10-06"
+  ],
+  "import_events": 25482069752,
+  "import_bytes": 1944919616542,
+  "import_share_of_bytes": 0.9832,
+  "import_share_of_events": 0.9868,
+  "per_day": {
+   "2026-10-02": {
+    "segments": 22,
+    "events": 75955502,
+    "bytes": 5763102795,
+    "GB": 5.76,
+    "share_of_bytes": 0.0029
+   },
+   "2026-10-03": {
+    "segments": 1057,
+    "events": 3601688553,
+    "bytes": 278456016785,
+    "GB": 278.46,
+    "share_of_bytes": 0.1408
+   },
+   "2026-10-04": {
+    "segments": 4440,
+    "events": 15484669424,
+    "bytes": 1187584490882,
+    "GB": 1187.58,
+    "share_of_bytes": 0.6003
+   },
+   "2026-10-05": {
+    "segments": 1694,
+    "events": 6092843863,
+    "bytes": 453707973864,
+    "GB": 453.71,
+    "share_of_bytes": 0.2294
+   },
+   "2026-10-06": {
+    "segments": 96,
+    "events": 302867912,
+    "bytes": 25171135011,
+    "GB": 25.17,
+    "share_of_bytes": 0.0127
+   },
+   "2026-10-07": {
+    "segments": 17,
+    "events": 34006873,
+    "bytes": 3545439423,
+    "GB": 3.55,
+    "share_of_bytes": 0.0018
+   },
+   "2026-10-08": {
+    "segments": 19,
+    "events": 36904936,
+    "bytes": 3753015766,
+    "GB": 3.75,
+    "share_of_bytes": 0.0019
+   },
+   "2026-10-09": {
+    "segments": 21,
+    "events": 39745677,
+    "bytes": 4112987058,
+    "GB": 4.11,
+    "share_of_bytes": 0.0021
+   },
+   "2026-10-10": {
+    "segments": 15,
+    "events": 31042639,
+    "bytes": 3244532649,
+    "GB": 3.24,
+    "share_of_bytes": 0.0016
+   },
+   "2026-10-11": {
+    "segments": 15,
+    "events": 30718286,
+    "bytes": 3132078421,
+    "GB": 3.13,
+    "share_of_bytes": 0.0016
+   },
+   "2026-10-12": {
+    "segments": 20,
+    "events": 38021108,
+    "bytes": 3925924118,
+    "GB": 3.93,
+    "share_of_bytes": 0.002
+   },
+   "2026-10-13": {
+    "segments": 17,
+    "events": 33802561,
+    "bytes": 3601118243,
+    "GB": 3.6,
+    "share_of_bytes": 0.0018
+   },
+   "2026-10-14": {
+    "segments": 10,
+    "events": 20483081,
+    "bytes": 2164617757,
+    "GB": 2.16,
+    "share_of_bytes": 0.0011
+   }
+  }
+ },
+ "status_page": {
+  "url": "https://jetstream.us-east.bsky.network/status",
+  "status": 200,
+  "jetstream_version": "v0.4.4 (commit d4db8c0)",
+  "fields": {
+   "Collections": "Segment Files",
+   "State": "steady_state",
+   "Entered": "8d 18h ago",
+   "Discovered": "45,734,854 repos",
+   "Downloaded": "41,972,097 repos",
+   "Pending": "295,593 repos",
+   "Errored": "2,145 repos",
+   "Unavailable": "306 repos",
+   "Duration": "2d 16h",
+   "Durable sequence frontier": "26,024,666,998",
+   "Events": "25,823,086,362",
+   "Seq range": "[1, 26,024,667,266]",
+   "Witnessed range": "2026-10-02 20:53:35 ... 2026-10-14 16:14:57",
+   "Configured lookback": "1d 12h",
+   "Sealed segments tracked": "7,443",
+   "Oldest retained seq": "25,964,993,328"
+  }
+ },
+ "checks": [
+  {
+   "name": "archive starts 2026-10-02",
+   "pass": true,
+   "detail": "archive_start=2026-10-02T20:53:35Z"
+  },
+  {
+   "name": ">90% of bytes witnessed 2026-10-03..06",
+   "pass": true,
+   "detail": "share=98.3% (1.94 TB, 25.48B events)"
+  }
+ ]
+}

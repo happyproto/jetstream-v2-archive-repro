@@ -1,6 +1,6 @@
 {
  "script": "coverage_bridgy",
- "generated_at": "2026-10-14T14:14:46Z",
+ "generated_at": "2026-10-14T16:32:36Z",
  "pds": "https://atproto.brid.gy",
  "collection": "site.standard.document",
  "rows": [
@@ -12,20 +12,21 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "10d 14h ago",
+    "Last attempted": "10d 16h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243fkcq22",
     "Result": "Match failure",
-    "authoritative rev": "2222244bovf22",
-    "authoritative root": "bafyreicnmacnxrrxt25ri3xreboo6yx5i6vt47pwhzcapwjwtztary2hcm",
+    "authoritative rev": "2222244bykj22",
+    "authoritative root": "bafyreib3zmg336amhi5jutqfzhvhp724llhhjzcs5x6in3nsepkovqjnzi",
     "local rev": "2222243fkcq22",
     "local root": "bafyreigjoli7ocjvmc2faoptypzfxxw6vemb4h5pvscjhxivip6rmtp5ou",
     "local records": "412",
     "Message": "local reconstructed MST root does not match authoritative repo root",
-    "http_status": 200
+    "http_status": 200,
+    "verification_attempts": 3
    },
    "pds_listRecords": {
-    "count": 30053,
+    "count": 30063,
     "pages": 301,
     "complete": true
    },
@@ -42,7 +43,26 @@
      "body": "{\"error\":\"RepoNotFound\",\"message\":\"repo not synchronized yet\"}"
     }
    },
-   "local_records_over_pds": 0.0137
+   "archive": {
+    "planned_blocks": 47,
+    "plan_entries": 7,
+    "whole_segments": 0,
+    "whole_segment_bytes": 0,
+    "whole_segment_blocks_est": 0,
+    "block_entries": 7,
+    "blocks": 47,
+    "block_bytes_est": 16713529,
+    "total_bytes_est": 16713529,
+    "entries_not_in_segment_cache": 0,
+    "bytes_downloaded": 10803525,
+    "events": 206,
+    "methods": [
+     "decoded"
+    ],
+    "failed_blocks": []
+   },
+   "local_records_over_pds": 0.0137,
+   "archive_events_over_pds": 0.0069
   },
   {
    "did": "did:plc:u7ffgmu5yvsqbhws4xuw4sr3",
@@ -52,12 +72,12 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "10d 11h ago",
+    "Last attempted": "10d 13h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243hsol22",
     "Result": "Match failure",
-    "authoritative rev": "2222244bomr22",
-    "authoritative root": "bafyreigksvdroeng3yo2yb6da6qht7umqcxqnkjixegk2ktlu6h5c4buwm",
+    "authoritative rev": "2222244byds22",
+    "authoritative root": "bafyreicm4yrxtl3we6auff6xpjdno2h646g5kj5ytr2eqdxqgkkcxkv27m",
     "local rev": "2222243q2f522",
     "local root": "bafyreidxanusllz2z53k5y4kgbozhbxbw5dfpwb7gqmpko44uuwqxqonhq",
     "local records": "1,284",
@@ -65,7 +85,7 @@
     "http_status": 200
    },
    "pds_listRecords": {
-    "count": 30353,
+    "count": 30363,
     "pages": 304,
     "complete": true
    },
@@ -82,7 +102,26 @@
      "body": "{\"error\":\"RepoNotFound\",\"message\":\"repo not synchronized yet\"}"
     }
    },
-   "local_records_over_pds": 0.0423
+   "archive": {
+    "planned_blocks": 301,
+    "plan_entries": 51,
+    "whole_segments": 0,
+    "whole_segment_bytes": 0,
+    "whole_segment_blocks_est": 0,
+    "block_entries": 51,
+    "blocks": 301,
+    "block_bytes_est": 119785896,
+    "total_bytes_est": 119785896,
+    "entries_not_in_segment_cache": 0,
+    "bytes_downloaded": 107884146,
+    "events": 642,
+    "methods": [
+     "decoded"
+    ],
+    "failed_blocks": []
+   },
+   "local_records_over_pds": 0.0423,
+   "archive_events_over_pds": 0.0211
   },
   {
    "did": "did:plc:hdmzvl3efru5o76jr6uoz65a",
@@ -92,12 +131,12 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "10d 18h ago",
+    "Last attempted": "10d 20h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243hnyq22",
     "Result": "Match failure",
-    "authoritative rev": "2222244btl422",
-    "authoritative root": "bafyreidiq2h5j2bxatagfsktehmb556qgpjkyl7ynzcjmie6efb4zybrnm",
+    "authoritative rev": "2222244c5iu22",
+    "authoritative root": "bafyreihfvceqx6zhfj4u27t23oe3dtmi2s5mrwgoceqy5mhmwa5zg4cmqe",
     "local rev": "2222243ola422",
     "local root": "bafyreiaokw77niqixkpihvlbnnebkkvmnbyftvhiomlhwpwkxcpny46d44",
     "local records": "1,176",
@@ -105,7 +144,7 @@
     "http_status": 200
    },
    "pds_listRecords": {
-    "count": 29879,
+    "count": 29889,
     "pages": 299,
     "complete": true
    },
@@ -122,7 +161,7 @@
      "body": "{\"error\":\"RepoNotFound\",\"message\":\"repo not synchronized yet\"}"
     }
    },
-   "local_records_over_pds": 0.0394
+   "local_records_over_pds": 0.0393
   },
   {
    "did": "did:plc:wc3uljbzjvw6xqq3b2yoirgf",
@@ -132,20 +171,21 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "10d 10h ago",
+    "Last attempted": "10d 12h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243gyz522",
     "Result": "Match failure",
-    "authoritative rev": "2222244bowk22",
-    "authoritative root": "bafyreie3hyv2n5he3qi5ntevp3m5oy7yymf6xpufbbihyo3e7gd52wovl4",
+    "authoritative rev": "2222244byll22",
+    "authoritative root": "bafyreiafb6yjprx34l4uhcxghynr4telw2vmwm2mf2r6v22uuzaga6qice",
     "local rev": "2222243gyz522",
     "local root": "bafyreigkzgzyp5onwclptyzydvqye67xygx4oxrdxrl6v4fguldlznyzqy",
     "local records": "324",
     "Message": "local reconstructed MST root does not match authoritative repo root",
-    "http_status": 200
+    "http_status": 200,
+    "verification_attempts": 2
    },
    "pds_listRecords": {
-    "count": 29176,
+    "count": 29186,
     "pages": 292,
     "complete": true
    },
@@ -172,12 +212,12 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "10d 23h ago",
+    "Last attempted": "11d 2h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243hpjq22",
     "Result": "Match failure",
-    "authoritative rev": "2222244blzr22",
-    "authoritative root": "bafyreigovlhfljkwgutghgnfu2qb4qw7lwkwhe2y7kj4dsy3byv6cydmle",
+    "authoritative rev": "2222244c7az22",
+    "authoritative root": "bafyreierbhnuxsyq7w2p3lmbr4kdywxbwn3riarkzf3h4k2ndteapwzace",
     "local rev": "22222443i2o22",
     "local root": "bafyreibbilzdfi7kedgix5rtptqw6fcqvp2if7dpqyswryigwb7jsvpoy4",
     "local records": "2,286",
@@ -185,8 +225,8 @@
     "http_status": 200
    },
    "pds_listRecords": {
-    "count": 29983,
-    "pages": 300,
+    "count": 30004,
+    "pages": 301,
     "complete": true
    },
    "getRepo": {
@@ -212,12 +252,12 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "11d 14h ago",
+    "Last attempted": "11d 17h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243hmsx22",
     "Result": "Match failure",
-    "authoritative rev": "2222244bsgk22",
-    "authoritative root": "bafyreidli25kqsiyi22p7nqjvrazdfmnikgtbphhtaq3vh53hnkt4pawiy",
+    "authoritative rev": "2222244c4el22",
+    "authoritative root": "bafyreihlhqf36c7dfljmq2whovc67ynsv6ahhtlt5dn6423jfxzrs3lmxm",
     "local rev": "22222443xb322",
     "local root": "bafyreih7hglcx5jm4or6uk3z46ztc5zp7rtfgl2vqlu6g56n6dalmqcy6m",
     "local records": "2,090",
@@ -225,7 +265,7 @@
     "http_status": 200
    },
    "pds_listRecords": {
-    "count": 29809,
+    "count": 29819,
     "pages": 299,
     "complete": true
    },
@@ -252,21 +292,20 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "10d 10h ago",
+    "Last attempted": "10d 12h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243hmt322",
     "Result": "Match failure",
-    "authoritative rev": "2222244brwz22",
-    "authoritative root": "bafyreiflvw545devof4sbqv5ozq6oschj66bydxx2ueywzqcocactms4pe",
-    "local rev": "2222244brwz22",
-    "local root": "bafyreidvyd2d3mrzsb246ultgrsfz3tzhcrtwnhqmvei2kxmiom5y3ekim",
-    "local records": "2,580",
+    "authoritative rev": "2222244c3s522",
+    "authoritative root": "bafyreidyicsfx46ynqkrnpwjmvvsbidbh74ysqo4cztndungfpsxfedgj4",
+    "local rev": "2222244c3s522",
+    "local root": "bafyreigzhuvnhp2mu266tgjl2jkcg4zzp2hm2j67tyu35c5crwh3qesftu",
+    "local records": "2,600",
     "Message": "local reconstructed MST root does not match authoritative repo root",
-    "http_status": 200,
-    "verification_attempts": 2
+    "http_status": 200
    },
    "pds_listRecords": {
-    "count": 29731,
+    "count": 29741,
     "pages": 298,
     "complete": true
    },
@@ -283,7 +322,7 @@
      "body": "{\"error\":\"RepoNotFound\",\"message\":\"repo not synchronized yet\"}"
     }
    },
-   "local_records_over_pds": 0.0868
+   "local_records_over_pds": 0.0874
   },
   {
    "did": "did:plc:pgcgxp22ajr7fkrrqogsxp2y",
@@ -293,20 +332,21 @@
     "Active": "true",
     "Backfill": "complete",
     "Retries": "0",
-    "Last attempted": "10d 13h ago",
+    "Last attempted": "10d 16h ago",
     "Backfill rev": "unknown",
     "Latest rev": "2222243fbys22",
     "Result": "Match failure",
-    "authoritative rev": "2222244bnqv22",
-    "authoritative root": "bafyreigqhwe4b3pevsoqjroa6cqk7smm4pzyrwotiroptvhnx32bewurn4",
+    "authoritative rev": "2222244bxcp22",
+    "authoritative root": "bafyreiamcc5aos7mgatu65fludtyumx6iif25heuhoy2ijlpgcmdd44s7i",
     "local rev": "222224444qi22",
     "local root": "bafyreihee4adrpljbzk63u62cbpws5zg6u7uezwvcih3ckvbp4zrl3edni",
     "local records": "2,096",
     "Message": "local reconstructed MST root does not match authoritative repo root",
-    "http_status": 200
+    "http_status": 200,
+    "verification_attempts": 3
    },
    "pds_listRecords": {
-    "count": 28474,
+    "count": 28484,
     "pages": 285,
     "complete": true
    },
@@ -326,86 +366,87 @@
    "local_records_over_pds": 0.0736
   }
  ],
+ "segments_fetched_at": "2026-10-14T16:14:56Z",
  "checks": [
   {
    "name": "did:plc:nng24p5wvmvzrtn7w2hoyfdq: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243fkcq22/2222244bovf22"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243fkcq22/2222244bykj22"
   },
   {
-   "name": "did:plc:nng24p5wvmvzrtn7w2hoyfdq: status-page local records < 10% of PDS records",
+   "name": "did:plc:nng24p5wvmvzrtn7w2hoyfdq: archive events < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=412 pds=30053 ratio=0.0137"
+   "detail": "archive events=206 pds=30063 ratio=0.0069"
   },
   {
    "name": "did:plc:u7ffgmu5yvsqbhws4xuw4sr3: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243q2f522/2222244bomr22"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243q2f522/2222244byds22"
   },
   {
-   "name": "did:plc:u7ffgmu5yvsqbhws4xuw4sr3: status-page local records < 10% of PDS records",
+   "name": "did:plc:u7ffgmu5yvsqbhws4xuw4sr3: archive events < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=1,284 pds=30353 ratio=0.0423"
+   "detail": "archive events=642 pds=30363 ratio=0.0211"
   },
   {
    "name": "did:plc:hdmzvl3efru5o76jr6uoz65a: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243ola422/2222244btl422"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243ola422/2222244c5iu22"
   },
   {
    "name": "did:plc:hdmzvl3efru5o76jr6uoz65a: status-page local records < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=1,176 pds=29879 ratio=0.0394"
+   "detail": "status-page local records=1,176 pds=29889 ratio=0.0393"
   },
   {
    "name": "did:plc:wc3uljbzjvw6xqq3b2yoirgf: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243gyz522/2222244bowk22"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243gyz522/2222244byll22"
   },
   {
    "name": "did:plc:wc3uljbzjvw6xqq3b2yoirgf: status-page local records < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=324 pds=29176 ratio=0.0111"
+   "detail": "status-page local records=324 pds=29186 ratio=0.0111"
   },
   {
    "name": "did:plc:avpncyh6y7jvfug6jhvclq3v: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=22222443i2o22/2222244blzr22"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=22222443i2o22/2222244c7az22"
   },
   {
    "name": "did:plc:avpncyh6y7jvfug6jhvclq3v: status-page local records < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=2,286 pds=29983 ratio=0.0762"
+   "detail": "status-page local records=2,286 pds=30004 ratio=0.0762"
   },
   {
    "name": "did:plc:27ynjnbos35i76bn7am3hgdq: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=22222443xb322/2222244bsgk22"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=22222443xb322/2222244c4el22"
   },
   {
    "name": "did:plc:27ynjnbos35i76bn7am3hgdq: status-page local records < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=2,090 pds=29809 ratio=0.0701"
+   "detail": "status-page local records=2,090 pds=29819 ratio=0.0701"
   },
   {
    "name": "did:plc:vzwxydbnqygisw42xlddrqfz: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222244brwz22/2222244brwz22"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222244c3s522/2222244c3s522"
   },
   {
    "name": "did:plc:vzwxydbnqygisw42xlddrqfz: status-page local records < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=2,580 pds=29731 ratio=0.0868"
+   "detail": "status-page local records=2,600 pds=29741 ratio=0.0874"
   },
   {
    "name": "did:plc:pgcgxp22ajr7fkrrqogsxp2y: complete + Match failure",
    "pass": true,
-   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=222224444qi22/2222244bnqv22"
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=222224444qi22/2222244bxcp22"
   },
   {
    "name": "did:plc:pgcgxp22ajr7fkrrqogsxp2y: status-page local records < 10% of PDS records",
    "pass": true,
-   "detail": "status-page local records=2,096 pds=28474 ratio=0.0736"
+   "detail": "status-page local records=2,096 pds=28484 ratio=0.0736"
   }
  ]
 }

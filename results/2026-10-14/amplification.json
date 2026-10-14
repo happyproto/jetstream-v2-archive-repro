@@ -1,0 +1,1106 @@
+{
+ "script": "amplification",
+ "generated_at": "2026-10-14T16:25:38Z",
+ "segments_fetched_at": "2026-10-14T16:14:56Z",
+ "status_collections": {
+  "url": "https://jetstream.us-east.bsky.network/status?tab=collections&collection=com.whtwnd.blog.entry",
+  "columns": [
+   "NSID",
+   "Events",
+   "Segments",
+   "Blocks"
+  ]
+ },
+ "collections": {
+  "com.whtwnd.blog.entry": {
+   "plan_ok": true,
+   "plan_error": null,
+   "plan_latency_s": 0.233,
+   "plan_pages": 1,
+   "status_page": {
+    "events": 6882,
+    "segments": 954,
+    "blocks": 1556
+   },
+   "plan_entries": 953,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 953,
+   "blocks": 1555,
+   "block_bytes_est": 560414542,
+   "total_bytes_est": 560414542,
+   "entries_not_in_segment_cache": 0,
+   "planned_blocks_total": 1555,
+   "bytes_per_event": 81432,
+   "events_per_planned_block": 4.426,
+   "sample": {
+    "requested": 50,
+    "downloaded": 50,
+    "seed": 1,
+    "methods": [
+     "decoded"
+    ],
+    "blocks": [
+     {
+      "segment": "seg_00000005ku.jss",
+      "block": 741,
+      "status": 307,
+      "compressed_bytes": 377520,
+      "decompressed_bytes": 1394110,
+      "events_in_block": 3997,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000000.jss",
+      "block": 159,
+      "status": 307,
+      "compressed_bytes": 185489,
+      "decompressed_bytes": 961277,
+      "events_in_block": 2048,
+      "matching_events": 8,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000529.jss",
+      "block": 834,
+      "status": 307,
+      "compressed_bytes": 426756,
+      "decompressed_bytes": 2182439,
+      "events_in_block": 4096,
+      "matching_events": 11,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005qn.jss",
+      "block": 466,
+      "status": 307,
+      "compressed_bytes": 434196,
+      "decompressed_bytes": 1504469,
+      "events_in_block": 3996,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005qn.jss",
+      "block": 385,
+      "status": 307,
+      "compressed_bytes": 429731,
+      "decompressed_bytes": 1490562,
+      "events_in_block": 4048,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002hm.jss",
+      "block": 12,
+      "status": 307,
+      "compressed_bytes": 340477,
+      "decompressed_bytes": 1471546,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005kp.jss",
+      "block": 54,
+      "status": 307,
+      "compressed_bytes": 401902,
+      "decompressed_bytes": 1634210,
+      "events_in_block": 4052,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005os.jss",
+      "block": 301,
+      "status": 307,
+      "compressed_bytes": 406024,
+      "decompressed_bytes": 1460988,
+      "events_in_block": 4005,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000040v.jss",
+      "block": 414,
+      "status": 307,
+      "compressed_bytes": 231191,
+      "decompressed_bytes": 1294982,
+      "events_in_block": 4090,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005qn.jss",
+      "block": 553,
+      "status": 307,
+      "compressed_bytes": 431070,
+      "decompressed_bytes": 1525295,
+      "events_in_block": 4041,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000004eb.jss",
+      "block": 643,
+      "status": 307,
+      "compressed_bytes": 301685,
+      "decompressed_bytes": 1390133,
+      "events_in_block": 4096,
+      "matching_events": 5,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000004r7.jss",
+      "block": 779,
+      "status": 307,
+      "compressed_bytes": 282867,
+      "decompressed_bytes": 1258843,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000107.jss",
+      "block": 690,
+      "status": 307,
+      "compressed_bytes": 372424,
+      "decompressed_bytes": 1691535,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000003uh.jss",
+      "block": 772,
+      "status": 307,
+      "compressed_bytes": 292600,
+      "decompressed_bytes": 1439088,
+      "events_in_block": 4096,
+      "matching_events": 5,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000278.jss",
+      "block": 451,
+      "status": 307,
+      "compressed_bytes": 269667,
+      "decompressed_bytes": 1321071,
+      "events_in_block": 4096,
+      "matching_events": 11,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000016f.jss",
+      "block": 724,
+      "status": 307,
+      "compressed_bytes": 149613,
+      "decompressed_bytes": 822310,
+      "events_in_block": 2533,
+      "matching_events": 3,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000004rm.jss",
+      "block": 717,
+      "status": 307,
+      "compressed_bytes": 304217,
+      "decompressed_bytes": 1380895,
+      "events_in_block": 4088,
+      "matching_events": 6,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000c7.jss",
+      "block": 243,
+      "status": 307,
+      "compressed_bytes": 526832,
+      "decompressed_bytes": 2446112,
+      "events_in_block": 4095,
+      "matching_events": 3,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000003s8.jss",
+      "block": 823,
+      "status": 307,
+      "compressed_bytes": 247930,
+      "decompressed_bytes": 1218865,
+      "events_in_block": 4093,
+      "matching_events": 4,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005ql.jss",
+      "block": 288,
+      "status": 307,
+      "compressed_bytes": 512341,
+      "decompressed_bytes": 1866617,
+      "events_in_block": 4014,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002ox.jss",
+      "block": 557,
+      "status": 307,
+      "compressed_bytes": 866458,
+      "decompressed_bytes": 3926443,
+      "events_in_block": 4096,
+      "matching_events": 12,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000001me.jss",
+      "block": 246,
+      "status": 307,
+      "compressed_bytes": 313721,
+      "decompressed_bytes": 1405431,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000004r.jss",
+      "block": 514,
+      "status": 307,
+      "compressed_bytes": 378545,
+      "decompressed_bytes": 1561481,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000044k.jss",
+      "block": 512,
+      "status": 307,
+      "compressed_bytes": 316049,
+      "decompressed_bytes": 1487041,
+      "events_in_block": 4095,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005k8.jss",
+      "block": 720,
+      "status": 307,
+      "compressed_bytes": 348190,
+      "decompressed_bytes": 1375529,
+      "events_in_block": 4026,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005ql.jss",
+      "block": 419,
+      "status": 307,
+      "compressed_bytes": 426591,
+      "decompressed_bytes": 1487952,
+      "events_in_block": 4002,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002wu.jss",
+      "block": 160,
+      "status": 307,
+      "compressed_bytes": 274195,
+      "decompressed_bytes": 1295531,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000001vg.jss",
+      "block": 750,
+      "status": 307,
+      "compressed_bytes": 335363,
+      "decompressed_bytes": 1459713,
+      "events_in_block": 4093,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005me.jss",
+      "block": 75,
+      "status": 307,
+      "compressed_bytes": 334375,
+      "decompressed_bytes": 1420791,
+      "events_in_block": 4081,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000057o.jss",
+      "block": 590,
+      "status": 307,
+      "compressed_bytes": 270273,
+      "decompressed_bytes": 1357973,
+      "events_in_block": 4095,
+      "matching_events": 3,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005qf.jss",
+      "block": 386,
+      "status": 307,
+      "compressed_bytes": 450958,
+      "decompressed_bytes": 1717871,
+      "events_in_block": 4021,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000001oq.jss",
+      "block": 274,
+      "status": 307,
+      "compressed_bytes": 316871,
+      "decompressed_bytes": 1444589,
+      "events_in_block": 4096,
+      "matching_events": 3,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005ot.jss",
+      "block": 382,
+      "status": 307,
+      "compressed_bytes": 422253,
+      "decompressed_bytes": 1472449,
+      "events_in_block": 4004,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000004hm.jss",
+      "block": 641,
+      "status": 307,
+      "compressed_bytes": 201227,
+      "decompressed_bytes": 1461673,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005ql.jss",
+      "block": 317,
+      "status": 307,
+      "compressed_bytes": 432894,
+      "decompressed_bytes": 1515652,
+      "events_in_block": 4027,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000000.jss",
+      "block": 377,
+      "status": 307,
+      "compressed_bytes": 285697,
+      "decompressed_bytes": 1332679,
+      "events_in_block": 4018,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000027t.jss",
+      "block": 773,
+      "status": 307,
+      "compressed_bytes": 323915,
+      "decompressed_bytes": 1429493,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000002.jss",
+      "block": 237,
+      "status": 307,
+      "compressed_bytes": 340206,
+      "decompressed_bytes": 1451412,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000001ak.jss",
+      "block": 745,
+      "status": 307,
+      "compressed_bytes": 371800,
+      "decompressed_bytes": 1581839,
+      "events_in_block": 4096,
+      "matching_events": 3,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000385.jss",
+      "block": 406,
+      "status": 307,
+      "compressed_bytes": 294204,
+      "decompressed_bytes": 1336011,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000040v.jss",
+      "block": 328,
+      "status": 307,
+      "compressed_bytes": 397920,
+      "decompressed_bytes": 1777730,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002dm.jss",
+      "block": 880,
+      "status": 307,
+      "compressed_bytes": 52081,
+      "decompressed_bytes": 340496,
+      "events_in_block": 1024,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000001bc.jss",
+      "block": 359,
+      "status": 307,
+      "compressed_bytes": 289859,
+      "decompressed_bytes": 1385295,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005pb.jss",
+      "block": 536,
+      "status": 307,
+      "compressed_bytes": 412379,
+      "decompressed_bytes": 1463339,
+      "events_in_block": 4035,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005im.jss",
+      "block": 369,
+      "status": 307,
+      "compressed_bytes": 312941,
+      "decompressed_bytes": 1442963,
+      "events_in_block": 4090,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000132.jss",
+      "block": 636,
+      "status": 307,
+      "compressed_bytes": 306023,
+      "decompressed_bytes": 1346277,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002jh.jss",
+      "block": 574,
+      "status": 307,
+      "compressed_bytes": 344049,
+      "decompressed_bytes": 1462616,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000001.jss",
+      "block": 139,
+      "status": 307,
+      "compressed_bytes": 280833,
+      "decompressed_bytes": 1324962,
+      "events_in_block": 4096,
+      "matching_events": 3,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005l3.jss",
+      "block": 814,
+      "status": 307,
+      "compressed_bytes": 368289,
+      "decompressed_bytes": 1548613,
+      "events_in_block": 4091,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005qm.jss",
+      "block": 176,
+      "status": 307,
+      "compressed_bytes": 436974,
+      "decompressed_bytes": 1513459,
+      "events_in_block": 4023,
+      "matching_events": 1,
+      "method": "decoded"
+     }
+    ],
+    "bytes_downloaded": 17429665,
+    "mean_block_bytes": 348593,
+    "mean_matching_events_per_block": 2.44,
+    "median_matching_events_per_block": 1,
+    "blocks_with_zero_matches": 0,
+    "bytes_per_matching_event_sampled": 142866
+   }
+  },
+  "site.standard.publication": {
+   "plan_ok": true,
+   "plan_error": null,
+   "plan_latency_s": 0.472,
+   "plan_pages": 1,
+   "status_page": {
+    "events": 17596,
+    "segments": 4826,
+    "blocks": 13081
+   },
+   "plan_entries": 4826,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 4826,
+   "blocks": 13081,
+   "block_bytes_est": 4250429386,
+   "total_bytes_est": 4250429386,
+   "entries_not_in_segment_cache": 0,
+   "planned_blocks_total": 13081,
+   "bytes_per_event": 241557,
+   "events_per_planned_block": 1.345,
+   "sample": {
+    "requested": 50,
+    "downloaded": 50,
+    "seed": 1,
+    "methods": [
+     "decoded"
+    ],
+    "blocks": [
+     {
+      "segment": "seg_00000003dx.jss",
+      "block": 837,
+      "status": 307,
+      "compressed_bytes": 352423,
+      "decompressed_bytes": 1749175,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000000.jss",
+      "block": 174,
+      "status": 307,
+      "compressed_bytes": 186646,
+      "decompressed_bytes": 955134,
+      "events_in_block": 3072,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000021i.jss",
+      "block": 274,
+      "status": 307,
+      "compressed_bytes": 266163,
+      "decompressed_bytes": 1327954,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005pn.jss",
+      "block": 483,
+      "status": 307,
+      "compressed_bytes": 410926,
+      "decompressed_bytes": 1456381,
+      "events_in_block": 3961,
+      "matching_events": 9,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005ox.jss",
+      "block": 2,
+      "status": 307,
+      "compressed_bytes": 409683,
+      "decompressed_bytes": 1469002,
+      "events_in_block": 4011,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000so.jss",
+      "block": 627,
+      "status": 307,
+      "compressed_bytes": 290831,
+      "decompressed_bytes": 1699900,
+      "events_in_block": 4091,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000373.jss",
+      "block": 439,
+      "status": 307,
+      "compressed_bytes": 313858,
+      "decompressed_bytes": 1397746,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000004lo.jss",
+      "block": 37,
+      "status": 307,
+      "compressed_bytes": 334649,
+      "decompressed_bytes": 1651280,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000014w.jss",
+      "block": 484,
+      "status": 307,
+      "compressed_bytes": 302557,
+      "decompressed_bytes": 1387904,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005qg.jss",
+      "block": 567,
+      "status": 307,
+      "compressed_bytes": 394493,
+      "decompressed_bytes": 1479697,
+      "events_in_block": 4020,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000173.jss",
+      "block": 64,
+      "status": 307,
+      "compressed_bytes": 327149,
+      "decompressed_bytes": 1501992,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000001fr.jss",
+      "block": 390,
+      "status": 307,
+      "compressed_bytes": 284880,
+      "decompressed_bytes": 1349255,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000dv.jss",
+      "block": 677,
+      "status": 307,
+      "compressed_bytes": 291431,
+      "decompressed_bytes": 1507725,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000013h.jss",
+      "block": 549,
+      "status": 307,
+      "compressed_bytes": 416089,
+      "decompressed_bytes": 1807227,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000pi.jss",
+      "block": 321,
+      "status": 307,
+      "compressed_bytes": 350856,
+      "decompressed_bytes": 1522269,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000fq.jss",
+      "block": 650,
+      "status": 307,
+      "compressed_bytes": 248849,
+      "decompressed_bytes": 1280284,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000001g7.jss",
+      "block": 279,
+      "status": 307,
+      "compressed_bytes": 1261651,
+      "decompressed_bytes": 4453494,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000054.jss",
+      "block": 372,
+      "status": 307,
+      "compressed_bytes": 333953,
+      "decompressed_bytes": 1581202,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000012v.jss",
+      "block": 84,
+      "status": 307,
+      "compressed_bytes": 355774,
+      "decompressed_bytes": 1796746,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000052a.jss",
+      "block": 907,
+      "status": 307,
+      "compressed_bytes": 241043,
+      "decompressed_bytes": 1579816,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000t5.jss",
+      "block": 151,
+      "status": 307,
+      "compressed_bytes": 349185,
+      "decompressed_bytes": 1600494,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000jg.jss",
+      "block": 276,
+      "status": 307,
+      "compressed_bytes": 305192,
+      "decompressed_bytes": 1420637,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000001u.jss",
+      "block": 264,
+      "status": 307,
+      "compressed_bytes": 301905,
+      "decompressed_bytes": 1523823,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000152.jss",
+      "block": 499,
+      "status": 307,
+      "compressed_bytes": 353570,
+      "decompressed_bytes": 1626330,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002vx.jss",
+      "block": 196,
+      "status": 307,
+      "compressed_bytes": 226917,
+      "decompressed_bytes": 1231372,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000538.jss",
+      "block": 719,
+      "status": 307,
+      "compressed_bytes": 325373,
+      "decompressed_bytes": 1593487,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000u7.jss",
+      "block": 742,
+      "status": 307,
+      "compressed_bytes": 694133,
+      "decompressed_bytes": 2556442,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000l5.jss",
+      "block": 306,
+      "status": 307,
+      "compressed_bytes": 476795,
+      "decompressed_bytes": 2207999,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000003sq.jss",
+      "block": 163,
+      "status": 307,
+      "compressed_bytes": 510646,
+      "decompressed_bytes": 2027476,
+      "events_in_block": 4095,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002a9.jss",
+      "block": 516,
+      "status": 307,
+      "compressed_bytes": 273641,
+      "decompressed_bytes": 1355681,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000527.jss",
+      "block": 389,
+      "status": 307,
+      "compressed_bytes": 324909,
+      "decompressed_bytes": 1968047,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000jo.jss",
+      "block": 616,
+      "status": 307,
+      "compressed_bytes": 282526,
+      "decompressed_bytes": 1344497,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000004lv.jss",
+      "block": 441,
+      "status": 307,
+      "compressed_bytes": 271669,
+      "decompressed_bytes": 1345280,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000173.jss",
+      "block": 7,
+      "status": 307,
+      "compressed_bytes": 404401,
+      "decompressed_bytes": 1709627,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000052d.jss",
+      "block": 79,
+      "status": 307,
+      "compressed_bytes": 1433518,
+      "decompressed_bytes": 4709899,
+      "events_in_block": 4093,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000005qg.jss",
+      "block": 518,
+      "status": 307,
+      "compressed_bytes": 343949,
+      "decompressed_bytes": 1290521,
+      "events_in_block": 4043,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000ox.jss",
+      "block": 554,
+      "status": 307,
+      "compressed_bytes": 472047,
+      "decompressed_bytes": 2074632,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_0000000524.jss",
+      "block": 224,
+      "status": 307,
+      "compressed_bytes": 378033,
+      "decompressed_bytes": 1331765,
+      "events_in_block": 3624,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000fr.jss",
+      "block": 248,
+      "status": 307,
+      "compressed_bytes": 352852,
+      "decompressed_bytes": 2023300,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000x5.jss",
+      "block": 375,
+      "status": 307,
+      "compressed_bytes": 355656,
+      "decompressed_bytes": 2024869,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000014a.jss",
+      "block": 448,
+      "status": 307,
+      "compressed_bytes": 295643,
+      "decompressed_bytes": 1580151,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000ps.jss",
+      "block": 115,
+      "status": 307,
+      "compressed_bytes": 723171,
+      "decompressed_bytes": 2818918,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000fn.jss",
+      "block": 42,
+      "status": 307,
+      "compressed_bytes": 297564,
+      "decompressed_bytes": 1365244,
+      "events_in_block": 4093,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000004o2.jss",
+      "block": 579,
+      "status": 307,
+      "compressed_bytes": 266877,
+      "decompressed_bytes": 1323378,
+      "events_in_block": 4095,
+      "matching_events": 2,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000002o9.jss",
+      "block": 512,
+      "status": 307,
+      "compressed_bytes": 329557,
+      "decompressed_bytes": 1471860,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000co.jss",
+      "block": 331,
+      "status": 307,
+      "compressed_bytes": 276395,
+      "decompressed_bytes": 1355745,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000000r6.jss",
+      "block": 772,
+      "status": 307,
+      "compressed_bytes": 263227,
+      "decompressed_bytes": 1313047,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000002x.jss",
+      "block": 136,
+      "status": 307,
+      "compressed_bytes": 339735,
+      "decompressed_bytes": 1541721,
+      "events_in_block": 4096,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_00000003c7.jss",
+      "block": 324,
+      "status": 307,
+      "compressed_bytes": 293332,
+      "decompressed_bytes": 1425783,
+      "events_in_block": 4095,
+      "matching_events": 1,
+      "method": "decoded"
+     },
+     {
+      "segment": "seg_000000058b.jss",
+      "block": 732,
+      "status": 307,
+      "compressed_bytes": 444467,
+      "decompressed_bytes": 1762263,
+      "events_in_block": 4096,
+      "matching_events": 2,
+      "method": "decoded"
+     }
+    ],
+    "bytes_downloaded": 19340789,
+    "mean_block_bytes": 386816,
+    "mean_matching_events_per_block": 1.32,
+    "median_matching_events_per_block": 1,
+    "blocks_with_zero_matches": 0,
+    "bytes_per_matching_event_sampled": 293042
+   }
+  }
+ },
+ "checks": [
+  {
+   "name": "com.whtwnd.blog.entry: >10 KB downloaded per matching event",
+   "pass": true,
+   "detail": "1555 blocks, 0.56 GB est. for 6882 events = 81432 B/event"
+  },
+  {
+   "name": "site.standard.publication: >10 KB downloaded per matching event",
+   "pass": true,
+   "detail": "13081 blocks, 4.25 GB est. for 17596 events = 241557 B/event"
+  }
+ ]
+}

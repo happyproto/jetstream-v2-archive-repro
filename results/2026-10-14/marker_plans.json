@@ -1,0 +1,250 @@
+{
+ "script": "marker_plans",
+ "generated_at": "2026-10-14T16:25:29Z",
+ "segments_fetched_at": "2026-10-14T16:14:56Z",
+ "tail_hours": 12,
+ "tail_after_seq": 26004613979,
+ "tail_cutoff_witnessed": "2026-10-14T04:02:55Z",
+ "dids_available": 12439,
+ "plans": [
+  {
+   "plan": "tail_10_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<10 DIDs>",
+    "afterSeq": 26004613979
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.053,
+   "total_latency_s": 0.053,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.053,
+     "plannedThroughSeq": 26024331319,
+     "sealedTipSeq": 26024331319,
+     "segments": 8,
+     "stats": {
+      "blocksMatched": 48,
+      "entries": 40,
+      "segmentsExamined": 7443,
+      "segmentsMatched": 8
+     }
+    }
+   ],
+   "plan_entries": 8,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 8,
+   "blocks": 48,
+   "block_bytes_est": 20979731,
+   "total_bytes_est": 20979731,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_100_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<100 DIDs>",
+    "afterSeq": 26004613979
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.079,
+   "total_latency_s": 0.079,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.079,
+     "plannedThroughSeq": 26024331319,
+     "sealedTipSeq": 26024331319,
+     "segments": 9,
+     "stats": {
+      "blocksMatched": 638,
+      "entries": 433,
+      "segmentsExamined": 7443,
+      "segmentsMatched": 9
+     }
+    }
+   ],
+   "plan_entries": 9,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 9,
+   "blocks": 638,
+   "block_bytes_est": 278112721,
+   "total_bytes_est": 278112721,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_1000_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<1000 DIDs>",
+    "afterSeq": 26004613979
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.175,
+   "total_latency_s": 0.175,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.175,
+     "plannedThroughSeq": 26024331319,
+     "sealedTipSeq": 26024331319,
+     "segments": 9,
+     "stats": {
+      "blocksMatched": 2937,
+      "entries": 643,
+      "segmentsExamined": 7443,
+      "segmentsMatched": 9
+     }
+    }
+   ],
+   "plan_entries": 9,
+   "whole_segments": 1,
+   "whole_segment_bytes": 86738436,
+   "whole_segment_blocks_est": 196,
+   "block_entries": 8,
+   "blocks": 2782,
+   "block_bytes_est": 1212224258,
+   "total_bytes_est": 1298962694,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_10000_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<10000 DIDs>",
+    "afterSeq": 26004613979
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.632,
+   "total_latency_s": 0.632,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.632,
+     "plannedThroughSeq": 26024331319,
+     "sealedTipSeq": 26024331319,
+     "segments": 9,
+     "stats": {
+      "blocksMatched": 3811,
+      "entries": 54,
+      "segmentsExamined": 7443,
+      "segmentsMatched": 9
+     }
+    }
+   ],
+   "plan_entries": 9,
+   "whole_segments": 7,
+   "whole_segment_bytes": 1500504240,
+   "whole_segment_blocks_est": 3460,
+   "block_entries": 2,
+   "blocks": 740,
+   "block_bytes_est": 331702173,
+   "total_bytes_est": 1832206413,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_no_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "afterSeq": 26004613979
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.051,
+   "total_latency_s": 0.051,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.051,
+     "plannedThroughSeq": 26024331319,
+     "sealedTipSeq": 26024331319,
+     "segments": 9,
+     "stats": {
+      "blocksMatched": 3822,
+      "entries": 56,
+      "segmentsExamined": 7443,
+      "segmentsMatched": 9
+     }
+    }
+   ],
+   "plan_entries": 9,
+   "whole_segments": 7,
+   "whole_segment_bytes": 1500504240,
+   "whole_segment_blocks_est": 3460,
+   "block_entries": 2,
+   "blocks": 748,
+   "block_bytes_est": 334972636,
+   "total_bytes_est": 1835476876,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "whole_archive_10000_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<10000 DIDs>"
+   },
+   "ok": false,
+   "error": "502 {\"error\":\"upstream unavailable\"}",
+   "first_page_status": 502,
+   "first_page_latency_s": 30.309,
+   "total_latency_s": 30.309,
+   "pages": [
+    {
+     "status": 502,
+     "elapsed_s": 30.309,
+     "body": "{\"error\":\"upstream unavailable\"}",
+     "headers": {
+      "content-length": "32",
+      "content-type": "application/json",
+      "date": "Wed, 14 Oct 2026 16:25:29 GMT",
+      "strict-transport-security": "max-age=63072000"
+     }
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "name": "tail: 10k-DID plan within 10% of the no-DID plan (bloom saturation)",
+   "pass": true,
+   "detail": "10k=1.83 GB, none=1.84 GB, ratio=0.998"
+  },
+  {
+   "name": "whole archive, 10k DIDs: 502 or >15 s",
+   "pass": true,
+   "detail": "status=502 latency=30.309 s error=\"502 {\\\"error\\\":\\\"upstream unavailable\\\"}\""
+  }
+ ]
+}
