@@ -24,7 +24,7 @@ The 12-hour window moves forward as the archive grows, so these numbers shift a 
 
 ## This one was partly our fault
 
-HappyView used to run this plan over the whole archive after replaying each collection. It didn't need to. The archive regularly deletes records that a later `account` or `sync` event cancels out, so only the most recent hours need checking. Those plans caused about 95% of a 16.4 GB run. HappyView now only checks the last 12 hours, so it no longer hits the 502.
+HappyView used to run this plan over the whole archive after replaying each collection. It didn't need to. When the archive compacts older segments, it already drops events that a later `account` or `sync` event replaces, so only the newest, uncompacted hours need checking. Those plans made up about 95% of a 16.4 GB run. HappyView now only checks the last 12 hours and no longer hits the 502.
 
 ## Running it
 

@@ -10,7 +10,7 @@ We tested the 8 brid.gy repos with the biggest gap between their PDS and the arc
 
 On the archive's status page, all 8 show `Backfill: complete`. The page also checks each repo live against its PDS. For all 8 that check reports `Result: Match failure`, meaning the archive's copy of the repo doesn't match brid.gy's.
 
-That failure is unusual. Repos the archive holds normally show `Result: Match`. We checked 5 of them by hand on 2026-10-14, along with `did:plc:wc3uljbzjvw6xqq3b2yoirgf`. The scripts can't repeat that check reliably, because the status page limits how often it runs. In our [finding 5](5-migrated-accounts.md) run it refused all 20 comparison accounts.
+Normal repos don't fail this way. On 2026-10-14 we looked up 5 repos the archive holds in full, next to `did:plc:wc3uljbzjvw6xqq3b2yoirgf`, and all 5 showed `Result: Match`. The scripts can't repeat that comparison reliably, because the status page limits how often it runs the check. In our [finding 5](5-migrated-accounts.md) run it refused all 20 comparison accounts.
 
 Our run at 16:32 UTC on 2026-10-14:
 

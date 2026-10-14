@@ -18,7 +18,7 @@ We created this key on 2026-10-13.
 
 `getBlock` doesn't return the block itself. It answers with a `307` redirect to a CDN URL, and you download the block from there. We started with a full quota and sent `getBlock` requests, 8 at a time, without ever following a redirect. After 3,235 redirects in 20 seconds, the archive answered `429 {"error":"byte limit exceeded"}` with `Retry-After: 1`. We had downloaded nothing, but the quota was gone.
 
-We don't know exactly how much each redirect costs. Our estimate for those 3,235 blocks is about 1.37 GB, which is more than the 1 GB burst plus 20 seconds of refill. Either a redirect costs less than the full block, or our size estimate is too high ([how we estimate](../reference.md#download-sizes)).
+We don't know exactly how much each redirect costs. Our estimate for those 3,235 blocks is about 1.37 GB, which is more than the 1 GB burst plus 20 seconds of refill. Either a redirect costs less than the full block, or our size estimate is too high ([how we estimate](../reference.md#download-sizes)). The blocks we downloaded for [finding 4](4-rare-collection-over-send.md) were bigger than our estimate, not smaller, which points to the first.
 
 We then followed redirects for 60 seconds and averaged 1.97 MB/s, which is the refill rate.
 

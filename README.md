@@ -9,13 +9,13 @@ We tried to backfill whole collections from Bluesky's hosted Jetstream v2 archiv
 | 1 | [The archive is one bulk import](docs/findings/1-archive-start.md) | The archive starts on 2026-10-02. 98% of its data came from a single import on Oct 3–6, so anything that import missed is still missing. |
 | 2 | [Quota is charged when a block is requested](docs/findings/2-quota.md) | Our key is limited to 2 MB/s, about 1/20 of the documented default. Requesting a block uses up quota even if you never download it. |
 | 3 | [Filtering by 10,000 DIDs does nothing](docs/findings/3-marker-plans.md) | A plan for 10,000 accounts costs as much as a plan for every account. Over the whole archive, it fails with a 502. |
-| 4 | [Small collections are expensive to replay](docs/findings/4-rare-collection-over-send.md) | Each block holds 4,096 events, and a small collection may have only one of them in a block. That works out to 80–300 KB downloaded per record. Bluesky already knows about this ([jetstream#192](https://github.com/bluesky-social/jetstream/issues/192)). |
+| 4 | [Small collections are expensive to replay](docs/findings/4-rare-collection-over-send.md) | You download blocks of 4,096 events to get the few you want, which works out to 80–300 KB per record. Bluesky already knows about this ([jetstream#192](https://github.com/bluesky-social/jetstream/issues/192)). |
 | 5 | [Accounts that moved PDS are missing](docs/findings/5-migrated-accounts.md) | Accounts that switched to a new PDS before the import never got imported. The archive still lists them as pending on their old PDS. |
 | 6 | [Bridgy Fed repos are mostly empty](docs/findings/6-bridgy-repos.md) | Large brid.gy repos are marked complete, but the archive holds less than 10% of their records. |
 
 Findings 1, 5 and 6 are about records the archive doesn't have. Findings 2, 3 and 4 are about why replaying the archive is slow and expensive.
 
-One of the problems was our fault. HappyView used to run finding 3's plans over the entire archive after every replay. That caused most of our downloads and all of our 502 errors. It now only looks at the last 12 hours.
+Part of finding 3 was our fault. HappyView used to run those plans over the entire archive after every replay, which caused most of our downloads and all of our 502 errors. It now only looks at the last 12 hours.
 
 ## Running the scripts
 
@@ -27,7 +27,7 @@ npm install
 npm run check            # runs every script and prints a pass/fail table
 ```
 
-`npm run check` uses a few MB of your quota. Some tests need much more, such as draining the quota or downloading sample blocks. To include them, run `npm run all -- --costly --check`. That takes about 20 minutes and uses about 1.5 GB of quota. Start it with a full quota, so wait at least 500 seconds after any other heavy use.
+`npm run check` uses a few MB of your quota. The tests that drain the quota or download sample blocks are left out unless you run `npm run all -- --costly --check`, which takes about 20 minutes and uses about 1.5 GB. Start it with a full quota by waiting at least 500 seconds after any other heavy use.
 
 Each finding also has its own command, like `npm run quota`. The finding's doc explains how to run it and what it costs.
 

@@ -2,7 +2,7 @@
 
 The archive stores events in blocks of 4,096, in the order they happened. To replay one collection, you download every block that holds at least one of its events. For a small collection, that usually means a whole block for one or two events.
 
-Bluesky already describes this as expected behaviour in [jetstream#192](https://github.com/bluesky-social/jetstream/issues/192). We include it to show what it costs at our quota, not to report a bug.
+Bluesky already describes this as expected behavior in [jetstream#192](https://github.com/bluesky-social/jetstream/issues/192). We include it to show what it costs at our quota, not to report a bug.
 
 Run it with `npm run amplification` ([`src/amplification.ts`](../../src/amplification.ts)). Our result is in [`results/2026-10-14/amplification.json`](../../results/2026-10-14/amplification.json).
 

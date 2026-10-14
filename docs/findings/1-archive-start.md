@@ -10,9 +10,9 @@ Run it with `npm run overview` ([`src/archive-overview.ts`](../../src/archive-ov
 
 The segments recorded between Oct 3 and Oct 6 hold 25.48 billion events and 1.945 TB, which is 98.3% of the archive. Since then the archive has grown by about 35 million events (3.5 GB) a day.
 
-The status page changed during our run on 2026-10-14. In the morning it reported version `v0.4.2 (commit f582c11)`. By 14:15 UTC it reported `v0.4.4 (commit d4db8c0)`. At 16:14 UTC it showed 25,823,086,362 events, starting at 2026-10-02 20:53:35, and a cursor lookback of 1 day 12 hours.
+The archive was upgraded on the day of our run, from `v0.4.2 (commit f582c11)` in the morning to `v0.4.4 (commit d4db8c0)` by 14:15 UTC. At 16:14 UTC the status page showed 25,823,086,362 events, starting at 2026-10-02 20:53:35, and a cursor lookback of 1 day 12 hours.
 
-This explains findings [5](5-migrated-accounts.md) and [6](6-bridgy-repos.md). If the import missed a repo's older records, nothing adds them later. Only new events reach the archive.
+If the import missed a repo's older records, nothing adds them later, because only new events reach the archive. That's why findings [5](5-migrated-accounts.md) and [6](6-bridgy-repos.md) matter.
 
 ## Running it
 

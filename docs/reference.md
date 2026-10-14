@@ -93,7 +93,7 @@ Plans are paged the same way Bluesky's Go client pages them. Each page starts at
 
 ### The drain test
 
-`quota --drain` requests blocks from the 40 newest segments, 8 at a time. It never follows a redirect, and it stops at the first 429. Its byte total is our estimate of the blocks it was redirected to. Nothing is actually transferred.
+`quota --drain` requests blocks from the 40 newest segments, 8 at a time. It never follows a redirect, and it stops at the first 429. Its byte total is our estimate of the blocks it was redirected to, since nothing is downloaded.
 
 ### Counting events in a block
 
