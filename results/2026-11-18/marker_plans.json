@@ -1,0 +1,251 @@
+{
+ "script": "marker_plans",
+ "generated_at": "2026-11-18T23:14:17Z",
+ "segments_fetched_at": "2026-11-18T23:13:45Z",
+ "tail_hours": 12,
+ "tail_after_seq": 27309579751,
+ "tail_cutoff_witnessed": "2026-11-18T11:09:27Z",
+ "dids_available": 12439,
+ "plans": [
+  {
+   "plan": "tail_10_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<10 DIDs>",
+    "afterSeq": 27309579751
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.044,
+   "total_latency_s": 0.044,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.044,
+     "plannedThroughSeq": 27330745458,
+     "sealedTipSeq": 27330745458,
+     "segments": 9,
+     "stats": {
+      "blocksMatched": 85,
+      "entries": 61,
+      "segmentsExamined": 8047,
+      "segmentsMatched": 9
+     }
+    }
+   ],
+   "plan_entries": 9,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 9,
+   "blocks": 85,
+   "block_bytes_est": 38329473,
+   "total_bytes_est": 38329473,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_100_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<100 DIDs>",
+    "afterSeq": 27309579751
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.06,
+   "total_latency_s": 0.06,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.06,
+     "plannedThroughSeq": 27330745458,
+     "sealedTipSeq": 27330745458,
+     "segments": 11,
+     "stats": {
+      "blocksMatched": 1046,
+      "entries": 682,
+      "segmentsExamined": 8047,
+      "segmentsMatched": 11
+     }
+    }
+   ],
+   "plan_entries": 11,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 11,
+   "blocks": 1046,
+   "block_bytes_est": 470835882,
+   "total_bytes_est": 470835882,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_1000_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<1000 DIDs>",
+    "afterSeq": 27309579751
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.149,
+   "total_latency_s": 0.149,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.149,
+     "plannedThroughSeq": 27330745458,
+     "sealedTipSeq": 27330745458,
+     "segments": 11,
+     "stats": {
+      "blocksMatched": 3980,
+      "entries": 180,
+      "segmentsExamined": 8047,
+      "segmentsMatched": 11
+     }
+    }
+   ],
+   "plan_entries": 11,
+   "whole_segments": 9,
+   "whole_segment_bytes": 1776641399,
+   "whole_segment_blocks_est": 3947,
+   "block_entries": 2,
+   "blocks": 858,
+   "block_bytes_est": 389109505,
+   "total_bytes_est": 2165750904,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_10000_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<10000 DIDs>",
+    "afterSeq": 27309579751
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.287,
+   "total_latency_s": 0.287,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.287,
+     "plannedThroughSeq": 27330745458,
+     "sealedTipSeq": 27330745458,
+     "segments": 11,
+     "stats": {
+      "blocksMatched": 4913,
+      "entries": 11,
+      "segmentsExamined": 8047,
+      "segmentsMatched": 11
+     }
+    }
+   ],
+   "plan_entries": 11,
+   "whole_segments": 11,
+   "whole_segment_bytes": 2306334302,
+   "whole_segment_blocks_est": 5115,
+   "block_entries": 0,
+   "blocks": 0,
+   "block_bytes_est": 0,
+   "total_bytes_est": 2306334302,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "tail_no_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "afterSeq": 27309579751
+   },
+   "ok": true,
+   "error": null,
+   "first_page_status": 200,
+   "first_page_latency_s": 0.034,
+   "total_latency_s": 0.034,
+   "pages": [
+    {
+     "status": 200,
+     "elapsed_s": 0.034,
+     "plannedThroughSeq": 27330745458,
+     "sealedTipSeq": 27330745458,
+     "segments": 11,
+     "stats": {
+      "blocksMatched": 4920,
+      "entries": 11,
+      "segmentsExamined": 8047,
+      "segmentsMatched": 11
+     }
+    }
+   ],
+   "plan_entries": 11,
+   "whole_segments": 11,
+   "whole_segment_bytes": 2306334302,
+   "whole_segment_blocks_est": 5115,
+   "block_entries": 0,
+   "blocks": 0,
+   "block_bytes_est": 0,
+   "total_bytes_est": 2306334302,
+   "entries_not_in_segment_cache": 0
+  },
+  {
+   "plan": "whole_archive_10000_dids",
+   "request": {
+    "kinds": [
+     "account",
+     "sync"
+    ],
+    "dids": "<10000 DIDs>"
+   },
+   "ok": false,
+   "error": "502 {\"error\":\"upstream unavailable\"}",
+   "first_page_status": 502,
+   "first_page_latency_s": 30.139,
+   "total_latency_s": 30.139,
+   "pages": [
+    {
+     "status": 502,
+     "elapsed_s": 30.139,
+     "body": "{\"error\":\"upstream unavailable\"}",
+     "headers": {
+      "content-length": "32",
+      "content-type": "application/json",
+      "date": "Wed, 18 Nov 2026 23:14:17 GMT",
+      "server": "openresty",
+      "strict-transport-security": "max-age=63072000"
+     }
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "name": "tail: 10k-DID plan within 10% of the no-DID plan (bloom saturation)",
+   "pass": true,
+   "detail": "10k=2.31 GB, none=2.31 GB, ratio=1.000"
+  },
+  {
+   "name": "whole archive, 10k DIDs: 502 or >15 s",
+   "pass": true,
+   "detail": "status=502 latency=30.139 s error=\"502 {\\\"error\\\":\\\"upstream unavailable\\\"}\""
+  }
+ ]
+}

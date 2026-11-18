@@ -1,0 +1,8 @@
+{
+  "nsid": "app.bsky.actor.profile",
+  "measured_at": "2026-11-18",
+  "status_page": { "events": 41437105, "segments": 8046, "blocks": 5681273 },
+  "plan": { "ok": true, "pages": 3, "latency_s": 0.793, "plan_entries": 8047, "whole_segments": 6220, "whole_segment_bytes": 1616182564840, "whole_segment_blocks_est": 5057645, "block_entries": 1827, "blocks": 1007880, "block_bytes_est": 317406455614, "total_bytes_est": 1933589020454 },
+  "archive": { "segments": 8047, "total_bytes": 2098552003938 },
+  "derived": { "share_of_archive": 0.921, "bytes_per_event": 46664, "days_at_2MBps": 11.2, "hours_at_42MBps_default": 12.8 }
+}

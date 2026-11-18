@@ -1,0 +1,74 @@
+{
+ "script": "amplification",
+ "generated_at": "2026-11-18T23:14:19Z",
+ "segments_fetched_at": "2026-11-18T23:13:45Z",
+ "status_collections": {
+  "url": "https://jetstream.us-east.bsky.network/status?tab=collections&collection=com.whtwnd.blog.entry",
+  "columns": [
+   "NSID",
+   "Events",
+   "Segments",
+   "Blocks"
+  ]
+ },
+ "collections": {
+  "com.whtwnd.blog.entry": {
+   "plan_ok": true,
+   "plan_error": null,
+   "plan_latency_s": 0.18,
+   "plan_pages": 1,
+   "status_page": {
+    "events": 9538,
+    "segments": 1351,
+    "blocks": 3973
+   },
+   "plan_entries": 1351,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 1351,
+   "blocks": 3973,
+   "block_bytes_est": 1570888954,
+   "total_bytes_est": 1570888954,
+   "entries_not_in_segment_cache": 0,
+   "planned_blocks_total": 3973,
+   "bytes_per_event": 164698,
+   "events_per_planned_block": 2.401
+  },
+  "site.standard.publication": {
+   "plan_ok": true,
+   "plan_error": null,
+   "plan_latency_s": 0.388,
+   "plan_pages": 1,
+   "status_page": {
+    "events": 22443,
+    "segments": 5278,
+    "blocks": 16277
+   },
+   "plan_entries": 5277,
+   "whole_segments": 0,
+   "whole_segment_bytes": 0,
+   "whole_segment_blocks_est": 0,
+   "block_entries": 5277,
+   "blocks": 16276,
+   "block_bytes_est": 5675033534,
+   "total_bytes_est": 5675033534,
+   "entries_not_in_segment_cache": 0,
+   "planned_blocks_total": 16276,
+   "bytes_per_event": 252864,
+   "events_per_planned_block": 1.379
+  }
+ },
+ "checks": [
+  {
+   "name": "com.whtwnd.blog.entry: >10 KB downloaded per matching event",
+   "pass": true,
+   "detail": "3973 blocks, 1.57 GB est. for 9538 events = 164698 B/event"
+  },
+  {
+   "name": "site.standard.publication: >10 KB downloaded per matching event",
+   "pass": true,
+   "detail": "16276 blocks, 5.68 GB est. for 22443 events = 252864 B/event"
+  }
+ ]
+}
