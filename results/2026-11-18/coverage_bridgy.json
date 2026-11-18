@@ -1,0 +1,412 @@
+{
+ "script": "coverage_bridgy",
+ "generated_at": "2026-11-18T23:20:28Z",
+ "pds": "https://atproto.brid.gy",
+ "collection": "site.standard.document",
+ "rows": [
+  {
+   "did": "did:plc:nng24p5wvmvzrtn7w2hoyfdq",
+   "status": {
+    "declared handle": "hardcoregayblog.com.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "45d 23h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243fkcq22",
+    "Result": "Match failure",
+    "authoritative rev": "2222247ezy322",
+    "authoritative root": "bafyreifmscnyxml3hdkqq2gxbpuh7zexfl2qicijrrxiy3y4dj3y3d4qoq",
+    "local rev": "2222247ezy322",
+    "local root": "bafyreigj7vbsdgrobnvblcgojarn36lba4agrhuotwe4wmpqrdql7gkvta",
+    "local records": "514",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200,
+    "verification_attempts": 2
+   },
+   "pds_listRecords": {
+    "count": 34311,
+    "pages": 344,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.015
+  },
+  {
+   "did": "did:plc:u7ffgmu5yvsqbhws4xuw4sr3",
+   "status": {
+    "declared handle": "betabooru.donmai.us.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "45d 20h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243hsol22",
+    "Result": "Match failure",
+    "authoritative rev": "2222245mo2322",
+    "authoritative root": "bafyreigksrycjxkvrqmflr772stq3vapuzijeuh57poxtiyqjfmyt3qdbm",
+    "local rev": "2222243q2f522",
+    "local root": "bafyreidxanusllz2z53k5y4kgbozhbxbw5dfpwb7gqmpko44uuwqxqonhq",
+    "local records": "1,284",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200
+   },
+   "pds_listRecords": {
+    "count": 32172,
+    "pages": 322,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.0399
+  },
+  {
+   "did": "did:plc:hdmzvl3efru5o76jr6uoz65a",
+   "status": {
+    "declared handle": "e-hentai.org.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "46d 3h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243hnyq22",
+    "Result": "Match failure",
+    "authoritative rev": "2222247f5yf22",
+    "authoritative root": "bafyreig2s7iko4e6w5jpl3yt6mckdo56zhtgzmlnogzjnj5jhdwyzi5swu",
+    "local rev": "2222247f5yf22",
+    "local root": "bafyreid5cdcewsn7fma72qkdfscyrrywjhjtzw2d7fc6ygna6skjhu54qa",
+    "local records": "1,294",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200
+   },
+   "pds_listRecords": {
+    "count": 34132,
+    "pages": 342,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.0379
+  },
+  {
+   "did": "did:plc:wc3uljbzjvw6xqq3b2yoirgf",
+   "status": {
+    "declared handle": "e621.net.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "45d 19h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243gyz522",
+    "Result": "Match failure",
+    "authoritative rev": "2222247cc5y22",
+    "authoritative root": "bafyreie3jst6ics36rsedu4kujidgkaktrbmxvlbtsfmj5gz72fqwipffq",
+    "local rev": "2222243gyz522",
+    "local root": "bafyreigkzgzyp5onwclptyzydvqye67xygx4oxrdxrl6v4fguldlznyzqy",
+    "local records": "324",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200
+   },
+   "pds_listRecords": {
+    "count": 33213,
+    "pages": 333,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.0098
+  },
+  {
+   "did": "did:plc:avpncyh6y7jvfug6jhvclq3v",
+   "status": {
+    "declared handle": "danbooru.donmai.us.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "46d 8h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243hpjq22",
+    "Result": "Match failure",
+    "authoritative rev": "2222247f6cc22",
+    "authoritative root": "bafyreieh4q2trieqx7he5ammd6kccxcjd5x22snp2kztrxfzc3imkfp46u",
+    "local rev": "2222247f6cc22",
+    "local root": "bafyreifwbexjnd3o7rs2nerug37jzbepqtcdrgq6yy3g67atpc6vndrpim",
+    "local records": "2,366",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200,
+    "verification_attempts": 3
+   },
+   "pds_listRecords": {
+    "count": 33185,
+    "pages": 332,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.0713
+  },
+  {
+   "did": "did:plc:27ynjnbos35i76bn7am3hgdq",
+   "status": {
+    "declared handle": "kagamihara.donmai.us.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "47d 0h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243hmsx22",
+    "Result": "Match failure",
+    "authoritative rev": "2222245mjb722",
+    "authoritative root": "bafyreifps5v7bblossjucuf27rkrb2rgfonp5dpv2wwo3bmfzolj2rf5iu",
+    "local rev": "22222443xb322",
+    "local root": "bafyreih7hglcx5jm4or6uk3z46ztc5zp7rtfgl2vqlu6g56n6dalmqcy6m",
+    "local records": "2,090",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200
+   },
+   "pds_listRecords": {
+    "count": 31617,
+    "pages": 317,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.0661
+  },
+  {
+   "did": "did:plc:vzwxydbnqygisw42xlddrqfz",
+   "status": {
+    "declared handle": "safebooru.donmai.us.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "45d 19h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243hmt322",
+    "Result": "Match failure",
+    "authoritative rev": "2222245misl22",
+    "authoritative root": "bafyreiejii2wgm4k5evqxhupzi6doniliio7mchuch6ixrziic4v23wsn4",
+    "local rev": "2222244dyez22",
+    "local root": "bafyreihsx42chhfu64nawdbetaxkl7w4y2spvve43xiq7azhawtidu2scy",
+    "local records": "2,750",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200
+   },
+   "pds_listRecords": {
+    "count": 31539,
+    "pages": 316,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.0872
+  },
+  {
+   "did": "did:plc:pgcgxp22ajr7fkrrqogsxp2y",
+   "status": {
+    "declared handle": "sonohara.donmai.us.web.brid.gy",
+    "PDS endpoint": "atproto.brid.gy",
+    "Active": "true",
+    "Backfill": "complete",
+    "Retries": "0",
+    "Last attempted": "45d 22h ago",
+    "Backfill rev": "unknown",
+    "Latest rev": "2222243fbys22",
+    "Result": "Match failure",
+    "authoritative rev": "2222245mn5222",
+    "authoritative root": "bafyreifi4qbjatobcqtoev3xaexxvkl52klzryciawim7gslutos632opy",
+    "local rev": "222224444qi22",
+    "local root": "bafyreihee4adrpljbzk63u62cbpws5zg6u7uezwvcih3ckvbp4zrl3edni",
+    "local records": "2,096",
+    "Message": "local reconstructed MST root does not match authoritative repo root",
+    "http_status": 200
+   },
+   "pds_listRecords": {
+    "count": 30292,
+    "pages": 303,
+    "complete": true
+   },
+   "getRepo": {
+    "no_follow": {
+     "status": 302,
+     "location_host": "bridgy-hubble.microcosm.blue",
+     "body": ""
+    },
+    "followed": {
+     "status": 200,
+     "host": "bridgy-hubble.microcosm.blue",
+     "content_type": "application/vnd.ipld.car",
+     "body": "<CAR, ? bytes>"
+    }
+   },
+   "local_records_over_pds": 0.0692
+  }
+ ],
+ "checks": [
+  {
+   "name": "did:plc:nng24p5wvmvzrtn7w2hoyfdq: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222247ezy322/2222247ezy322"
+  },
+  {
+   "name": "did:plc:nng24p5wvmvzrtn7w2hoyfdq: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=514 pds=34311 ratio=0.015"
+  },
+  {
+   "name": "did:plc:u7ffgmu5yvsqbhws4xuw4sr3: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243q2f522/2222245mo2322"
+  },
+  {
+   "name": "did:plc:u7ffgmu5yvsqbhws4xuw4sr3: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=1,284 pds=32172 ratio=0.0399"
+  },
+  {
+   "name": "did:plc:hdmzvl3efru5o76jr6uoz65a: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222247f5yf22/2222247f5yf22"
+  },
+  {
+   "name": "did:plc:hdmzvl3efru5o76jr6uoz65a: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=1,294 pds=34132 ratio=0.0379"
+  },
+  {
+   "name": "did:plc:wc3uljbzjvw6xqq3b2yoirgf: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222243gyz522/2222247cc5y22"
+  },
+  {
+   "name": "did:plc:wc3uljbzjvw6xqq3b2yoirgf: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=324 pds=33213 ratio=0.0098"
+  },
+  {
+   "name": "did:plc:avpncyh6y7jvfug6jhvclq3v: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222247f6cc22/2222247f6cc22"
+  },
+  {
+   "name": "did:plc:avpncyh6y7jvfug6jhvclq3v: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=2,366 pds=33185 ratio=0.0713"
+  },
+  {
+   "name": "did:plc:27ynjnbos35i76bn7am3hgdq: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=22222443xb322/2222245mjb722"
+  },
+  {
+   "name": "did:plc:27ynjnbos35i76bn7am3hgdq: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=2,090 pds=31617 ratio=0.0661"
+  },
+  {
+   "name": "did:plc:vzwxydbnqygisw42xlddrqfz: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=2222244dyez22/2222245misl22"
+  },
+  {
+   "name": "did:plc:vzwxydbnqygisw42xlddrqfz: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=2,750 pds=31539 ratio=0.0872"
+  },
+  {
+   "name": "did:plc:pgcgxp22ajr7fkrrqogsxp2y: complete + Match failure",
+   "pass": true,
+   "detail": "Backfill=\"complete\" Result=\"Match failure\" local rev/authoritative rev=222224444qi22/2222245mn5222"
+  },
+  {
+   "name": "did:plc:pgcgxp22ajr7fkrrqogsxp2y: status-page local records < 10% of PDS records",
+   "pass": true,
+   "detail": "status-page local records=2,096 pds=30292 ratio=0.0692"
+  }
+ ]
+}

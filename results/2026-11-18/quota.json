@@ -1,0 +1,54 @@
+{
+ "script": "quota",
+ "generated_at": "2026-11-18T23:13:46Z",
+ "segments_fetched_at": "2026-11-18T23:13:45Z",
+ "headers_probe": {
+  "request": "planSnapshot kinds=[commit] collections=[com.whtwnd.blog.entry] (last ~1 h)",
+  "status": 200,
+  "elapsed_s": 0.035,
+  "quota_headers": {
+   "headwind-quota-burst-bytes": "1000000000",
+   "headwind-quota-refill-bytes": "2000000",
+   "headwind-quota-refill-period-seconds": "1"
+  },
+  "all_headers": {
+   "cache-control": "private, no-cache",
+   "content-encoding": "br",
+   "content-type": "application/json",
+   "date": "Wed, 18 Nov 2026 23:13:46 GMT",
+   "headwind-quota-burst-bytes": "1000000000",
+   "headwind-quota-refill-bytes": "2000000",
+   "headwind-quota-refill-period-seconds": "1",
+   "server": "openresty",
+   "strict-transport-security": "max-age=63072000",
+   "vary": "Accept-Encoding"
+  }
+ },
+ "checks": [
+  {
+   "name": "headwind-quota-refill-bytes == 2000000",
+   "pass": true,
+   "detail": "got \"2000000\""
+  },
+  {
+   "name": "headwind-quota-refill-period-seconds == 1",
+   "pass": true,
+   "detail": "got \"1\""
+  },
+  {
+   "name": "headwind-quota-burst-bytes == 1000000000",
+   "pass": true,
+   "detail": "got \"1000000000\""
+  },
+  {
+   "name": "drain: 429 without downloading any block",
+   "pass": null,
+   "detail": "not run (needs --drain)"
+  },
+  {
+   "name": "drain: 429 body is {\"error\":\"byte limit exceeded\"}",
+   "pass": null,
+   "detail": "not run (needs --drain)"
+  }
+ ]
+}

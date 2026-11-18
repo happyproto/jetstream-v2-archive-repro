@@ -1,0 +1,2747 @@
+{
+ "script": "coverage_migrated",
+ "generated_at": "2026-11-18T23:14:51Z",
+ "seed": 1,
+ "sampler": "mulberry32 + partial Fisher-Yates (src/lib/pool.ts seededSample)",
+ "archive_start": "2026-10-02",
+ "absent": {
+  "fixture": "publication_absent_from_archive.txt",
+  "population": 912,
+  "summary": {
+   "n": 60,
+   "backfill": {
+    "pending": 52,
+    "complete": 8
+   },
+   "result": {
+    "null": 52,
+    "Match failure": 8
+   },
+   "pending": 52,
+   "pending_moved_before_archive_start": 50,
+   "pending_jetstream_host_is_current": 2,
+   "moved_between": [
+    "2025-07-25",
+    "2026-09-30"
+   ],
+   "moved_to": {
+    "eurosky.social": 29,
+    "blacksky.app": 9,
+    "selfhosted.social": 3,
+    "npmx.social": 2,
+    "northsky.social": 2,
+    "jarrett.app": 1,
+    "pds.popbob.wtf": 1,
+    "app.leafplaza.eu": 1,
+    "hamster.farm": 1,
+    "pds.n2.pm": 1
+   },
+   "jetstream_pds_hosts": {
+    "morel.us-east.host.bsky.network": 6,
+    "porcini.us-east.host.bsky.network": 5,
+    "oyster.us-east.host.bsky.network": 4,
+    "inkcap.us-east.host.bsky.network": 4,
+    "shiitake.us-east.host.bsky.network": 3,
+    "helvella.us-east.host.bsky.network": 3,
+    "puffball.us-east.host.bsky.network": 3,
+    "shimeji.us-east.host.bsky.network": 3,
+    "lionsmane.us-east.host.bsky.network": 3,
+    "amanita.us-east.host.bsky.network": 2
+   },
+   "verification_unavailable": 52
+  },
+  "rows": [
+   {
+    "did": "did:plc:ufu6mmhwbtwvapkw5y3crpgz",
+    "status": {
+     "declared handle": "shilderi.eurosky.social",
+     "PDS endpoint": "shiitake.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4pus27rk2a",
+     "Result": "Match failure",
+     "authoritative rev": "3n2mlftw74t2f",
+     "authoritative root": "bafyreib5hzyaeosfrxvexercd4shqhztt4plhw4lwngtn5dtmwu4pzs42u",
+     "local rev": "3n2mlftw74t2f",
+     "local root": "bafyreid356ewdazwnr6dsqyhmazammrvlbuv3yjkrtwqc7jhbbygtgb2pa",
+     "local records": "7,344",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-08-18T23:08:52.799Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-12T23:55:05.628Z",
+      "shiitake.us-east.host.bsky.network"
+     ],
+     [
+      "2026-03-30T12:41:41.794Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "shiitake.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-30T12:41:41.794Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:257wekqxg4hyapkq6k47igmp",
+    "status": {
+     "declared handle": "flo-bit.dev",
+     "PDS endpoint": "helvella.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4vgpihlx2s",
+     "Result": "Match failure",
+     "authoritative rev": "3n2mom5h43i25",
+     "authoritative root": "bafyreidnz64pjxe2tawlddhhx24f625efec5zma2jq3gnrslixgfod6yrm",
+     "local rev": "3n2mom5h43i25",
+     "local root": "bafyreigg67f5hg74v7z4eevbdostyzzh3bild3k4jvijrkfeegscp5uoxi",
+     "local records": "1,330",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-08T02:08:30.963Z",
+      "helvella.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-26T21:30:34.797Z",
+      "npmx.social"
+     ]
+    ],
+    "current_pds": "npmx.social",
+    "jetstream_pds": "helvella.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-26T21:30:34.797Z",
+    "moved_to": "npmx.social"
+   },
+   {
+    "did": "did:plc:cphnnz5vrzbcscztdxhakpbo",
+    "status": {
+     "declared handle": "revistacasaejardim.globo.com.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 6h ago",
+     "Backfill rev": "unknown",
+     "Latest rev": "2222243ge6x22",
+     "Result": "Match failure",
+     "authoritative rev": "2222247c5dd22",
+     "authoritative root": "bafyreihmovmu67vgwlfcnvv7i7qlvarwuu6ljpyw6cgj3iogzb57cc4dym",
+     "local rev": "2222247c5dd22",
+     "local root": "bafyreibi6wzj765smybe3mcywzaaad7tezqfoggfvafrdbryx62ow6os5u",
+     "local records": "586",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-09-03T11:10:02.349Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:pddp4xt5lgnv2qsegbzzs4xg",
+    "status": {
+     "declared handle": "evan.jarrett.net",
+     "PDS endpoint": "amanita.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx2pzkw6g22c",
+     "Result": "Match failure",
+     "authoritative rev": "3n2c57jijbk2v",
+     "authoritative root": "bafyreihc7refjmyksx57ysm6fnqhknaarxri3l67mxmxpew72kwamvchei",
+     "local rev": "3n2c57jijbk2v",
+     "local root": "bafyreigg2dvdxxqqxchqddfwabltwi5pblrknohkikabaocy4p66obqs3e",
+     "local records": "227",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-06-08T21:27:50.285Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T01:54:33.233Z",
+      "amanita.us-east.host.bsky.network"
+     ],
+     [
+      "2025-10-27T01:45:45.450Z",
+      "jarrett.app"
+     ]
+    ],
+    "current_pds": "jarrett.app",
+    "jetstream_pds": "amanita.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-10-27T01:45:45.450Z",
+    "moved_to": "jarrett.app"
+   },
+   {
+    "did": "did:plc:fhg4ndnjwmxfkarwaqml7kyo",
+    "status": {
+     "declared handle": "woof.monster",
+     "PDS endpoint": "boletus.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx46gjwk6s2u",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-02-11T09:21:17.557Z",
+      "boletus.us-west.host.bsky.network"
+     ],
+     [
+      "2025-08-27T12:50:02.756Z",
+      "pds.popbob.wtf"
+     ]
+    ],
+    "current_pds": "pds.popbob.wtf",
+    "jetstream_pds": "boletus.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-08-27T12:50:02.756Z",
+    "moved_to": "pds.popbob.wtf"
+   },
+   {
+    "did": "did:plc:7flmq4g2ytgtdm3pfycot3wg",
+    "status": {
+     "declared handle": "viewtifulo.com",
+     "PDS endpoint": "chaga.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4ydqclwbsb",
+     "Result": "Match failure",
+     "authoritative rev": "3n2lx5c3c7zvn",
+     "authoritative root": "bafyreieyvsdel72dr5upq54aj3obtybytv5xh2aksmqxkclezauldqwpka",
+     "local rev": "3n2lx5c3c7zvn",
+     "local root": "bafyreibtrcj6z4xfhx7la4i5fm5deoehxx2rofe55xiflfvckjuim2puqm",
+     "local records": "551",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-02-06T18:48:42.874Z",
+      "chaga.us-west.host.bsky.network"
+     ],
+     [
+      "2025-09-16T20:12:29.735Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "chaga.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-09-16T20:12:29.735Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:tpahzhv7j7bxzcw6g35sijrd",
+    "status": {
+     "declared handle": "andremchang.eurosky.social",
+     "PDS endpoint": "conocybe.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-09-08T05:06:49.363Z",
+      "conocybe.us-west.host.bsky.network"
+     ],
+     [
+      "2026-06-07T05:28:39.526Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "conocybe.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-06-07T05:28:39.526Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:zxclnyklmf3ehq57qwe56v5m",
+    "status": {
+     "declared handle": "dfaria.eu",
+     "PDS endpoint": "puffball.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4ycctrtz2t",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-04-27T17:16:00.376Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T22:53:54.654Z",
+      "puffball.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-26T22:13:43.609Z",
+      "eurosky.social"
+     ],
+     [
+      "2026-11-14T02:24:02.585Z",
+      "at.dfaria.eu"
+     ]
+    ],
+    "current_pds": "at.dfaria.eu",
+    "jetstream_pds": "puffball.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-26T22:13:43.609Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:hlc5btk246kylj4klehcveml",
+    "status": {
+     "declared handle": "athena300.eurosky.social",
+     "PDS endpoint": "pholiota.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4hlrrrk62k",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-08-09T00:26:00.114Z",
+      "pholiota.us-west.host.bsky.network"
+     ],
+     [
+      "2026-03-19T01:20:16.595Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "pholiota.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-19T01:20:16.595Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:yhdi57m4hpjn5b33qmxfkofn",
+    "status": {
+     "declared handle": "norbertwoehnl.com",
+     "PDS endpoint": "helvella.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4uxprm2n2x",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-16T04:08:24.463Z",
+      "helvella.us-east.host.bsky.network"
+     ],
+     [
+      "2026-04-22T05:45:45.243Z",
+      "app.leafplaza.eu"
+     ]
+    ],
+    "current_pds": "app.leafplaza.eu",
+    "jetstream_pds": "helvella.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-04-22T05:45:45.243Z",
+    "moved_to": "app.leafplaza.eu"
+   },
+   {
+    "did": "did:plc:jlvp4iabaucgv3bkoah42kvl",
+    "status": {
+     "declared handle": "eulchenp.eurosky.social",
+     "PDS endpoint": "porcini.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx3gmpcdci2t",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-09-11T14:44:19.532Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T16:56:16.871Z",
+      "porcini.us-east.host.bsky.network"
+     ],
+     [
+      "2026-04-17T13:31:08.670Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "porcini.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-04-17T13:31:08.670Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:lyzbjvra27cycouuypry2vfu",
+    "status": {
+     "declared handle": "moute.eurosky.social",
+     "PDS endpoint": "oyster.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4xwibvpn2l",
+     "Result": "Match failure",
+     "authoritative rev": "3n2lg325zvl25",
+     "authoritative root": "bafyreialfu5i26wu4bkxaza3qoqmsv23kom27uw6iiav3crxovvupoe7za",
+     "local rev": "3n2lg325zvl25",
+     "local root": "bafyreiau4gbfi5kklkiwdxd63rtynym4tbl7xilzikccx4xakeqhvfwgze",
+     "local records": "140",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-12-23T16:11:24.614Z",
+      "oyster.us-east.host.bsky.network"
+     ],
+     [
+      "2026-03-30T15:36:38.851Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "oyster.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-30T15:36:38.851Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:4grtxbyr4qarwph3z7ehokmr",
+    "status": {
+     "declared handle": "sewerslide.xyz",
+     "PDS endpoint": "morel.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mwyp3zv6bi2s",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-08-06T04:23:53.188Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T02:12:08.835Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-08T22:06:34.460Z",
+      "selfhosted.social"
+     ]
+    ],
+    "current_pds": "selfhosted.social",
+    "jetstream_pds": "morel.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-08T22:06:34.460Z",
+    "moved_to": "selfhosted.social"
+   },
+   {
+    "did": "did:plc:6jak2nglasyaawg4v67i7lmr",
+    "status": {
+     "declared handle": "mirror.co.uk.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 16h ago",
+     "Backfill rev": "unknown",
+     "Latest rev": "2222243gjhb22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-09-08T14:00:41.146Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:tne4x6uotoief6t5cildh75l",
+    "status": {
+     "declared handle": "moreandagain.me",
+     "PDS endpoint": "shiitake.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4ycxr2432u",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-04-26T03:34:28.517Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-12T22:43:56.605Z",
+      "shiitake.us-east.host.bsky.network"
+     ],
+     [
+      "2025-09-11T03:55:18.163Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "shiitake.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-09-11T03:55:18.163Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:gsn755m7fgsjrdejczgwxmr4",
+    "status": {
+     "declared handle": "piotr.zaborowski.dev",
+     "PDS endpoint": "woodear.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "Result": "Match failure",
+     "authoritative rev": "3n2jftpy35e2f",
+     "authoritative root": "bafyreifpyoshhx5ygdnjqr46n5bc3li6wfh5shgfdq6twjd6qbijzstkzu",
+     "local rev": "3n2jftpy35e2f",
+     "local root": "bafyreidk4awssvm7h37c7k4bczdwzx4aybvsvubpnbnlnqhghsae4mqys4",
+     "local records": "23",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-09-26T09:27:48.343Z",
+      "woodear.us-west.host.bsky.network"
+     ],
+     [
+      "2026-03-02T15:36:20.932Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "woodear.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-02T15:36:20.932Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:mb5nwjfn3y3giqpicth32dx5",
+    "status": {
+     "declared handle": "soph.nya.je",
+     "PDS endpoint": "shimeji.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-06-12T04:34:58.132Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T17:07:26.493Z",
+      "shimeji.us-east.host.bsky.network"
+     ],
+     [
+      "2026-06-14T11:40:48.176Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "shimeji.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-06-14T11:40:48.176Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:u6jsazt54og7kx25yqvgmcox",
+    "status": {
+     "declared handle": "cyrave.net",
+     "PDS endpoint": "matsutake.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx45yrw45r2j",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-10-31T02:28:45.567Z",
+      "matsutake.us-west.host.bsky.network"
+     ],
+     [
+      "2026-01-24T00:31:17.974Z",
+      "northsky.social"
+     ]
+    ],
+    "current_pds": "northsky.social",
+    "jetstream_pds": "matsutake.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-01-24T00:31:17.974Z",
+    "moved_to": "northsky.social"
+   },
+   {
+    "did": "did:plc:6e2odmvosyunujr2i2olnxcn",
+    "status": {
+     "declared handle": "humnews.pk.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 16h ago",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-01-01T19:34:45.889Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:kxscagnvvwphcwbfzsxafacg",
+    "status": {
+     "declared handle": "lagaceta.com.ar.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 1h ago",
+     "Backfill rev": "unknown",
+     "Latest rev": "2222243ht4d22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-26T21:35:44.072Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:ppv3gfqhtzphp3cjtzkvmckh",
+    "status": {
+     "declared handle": "8bit.lol",
+     "PDS endpoint": "amanita.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4c3y3rpx2s",
+     "Result": "Match failure",
+     "authoritative rev": "3n2mmto2dyj2j",
+     "authoritative root": "bafyreid5gdfbovnwrdwmpyfsja64prl4clmdhbtrfwdg6qggwqgtibrahq",
+     "local rev": "3n2mmto2dyj2j",
+     "local root": "bafyreigk2isztgtmccxbcjo2xhw4dyhocw3cjcehzh2vfpz2ofhpjvt56m",
+     "local records": "6,762",
+     "Message": "local reconstructed MST root does not match authoritative repo root",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-05-27T22:04:26.272Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T02:32:42.219Z",
+      "amanita.us-east.host.bsky.network"
+     ],
+     [
+      "2025-12-03T21:15:54.326Z",
+      "selfhosted.social"
+     ]
+    ],
+    "current_pds": "selfhosted.social",
+    "jetstream_pds": "amanita.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-12-03T21:15:54.326Z",
+    "moved_to": "selfhosted.social"
+   },
+   {
+    "did": "did:plc:fkv4cse4hdtq3ohmfskvctqp",
+    "status": {
+     "declared handle": "janego.myatproto.social",
+     "PDS endpoint": "enoki.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-07-18T21:52:29.728Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T03:48:27.630Z",
+      "enoki.us-east.host.bsky.network"
+     ],
+     [
+      "2025-10-08T15:49:52.149Z",
+      "blacksky.app"
+     ],
+     [
+      "2026-01-16T17:20:11.155Z",
+      "northsky.social"
+     ],
+     [
+      "2026-01-16T21:10:11.622Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "enoki.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-10-08T15:49:52.149Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:5d2ukw2jd66ptminbhuldcu7",
+    "status": {
+     "declared handle": "armand.npmx.social",
+     "PDS endpoint": "morel.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4wwhg5ax2s",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-10-20T14:18:55.863Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T04:17:03.185Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-26T06:30:38.770Z",
+      "npmx.social"
+     ]
+    ],
+    "current_pds": "npmx.social",
+    "jetstream_pds": "morel.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-26T06:30:38.770Z",
+    "moved_to": "npmx.social"
+   },
+   {
+    "did": "did:plc:humyyqas7n4wrqoivs7sblre",
+    "status": {
+     "declared handle": "terevaden.net",
+     "PDS endpoint": "porcini.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4w64prht2g",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-10-04T07:27:20.135Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T04:05:34.947Z",
+      "porcini.us-east.host.bsky.network"
+     ],
+     [
+      "2026-03-19T14:09:32.767Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "porcini.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-19T14:09:32.767Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:shdxcnme4invcc4lbncwp3sr",
+    "status": {
+     "declared handle": "l041s.fr",
+     "PDS endpoint": "lionsmane.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx37s5phpo2t",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-10-22T20:19:36.514Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T01:50:41.864Z",
+      "lionsmane.us-east.host.bsky.network"
+     ],
+     [
+      "2026-03-03T22:42:41.688Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "lionsmane.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-03T22:42:41.688Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:d7eqr7ano2ggfidoxd5n2m7v",
+    "status": {
+     "declared handle": "axyz.at",
+     "PDS endpoint": "hollowfoot.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-03-08T21:10:13.333Z",
+      "hollowfoot.us-west.host.bsky.network"
+     ],
+     [
+      "2026-06-19T09:01:49.147Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "hollowfoot.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-06-19T09:01:49.147Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:6vmisimozwfwla3qqhmczupv",
+    "status": {
+     "declared handle": "jopiju.co",
+     "PDS endpoint": "shaggymane.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4webddgi2v",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-04T22:49:02.845Z",
+      "shaggymane.us-west.host.bsky.network"
+     ],
+     [
+      "2026-02-27T22:38:30.102Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "shaggymane.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-27T22:38:30.102Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:73nfzzse3geydqucnmieumju",
+    "status": {
+     "declared handle": "zed.gay",
+     "PDS endpoint": "inkcap.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4qc4uw422j",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-07-24T10:12:48.374Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T23:09:25.942Z",
+      "inkcap.us-east.host.bsky.network"
+     ],
+     [
+      "2026-09-06T12:47:08.650Z",
+      "northsky.social"
+     ]
+    ],
+    "current_pds": "northsky.social",
+    "jetstream_pds": "inkcap.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-09-06T12:47:08.650Z",
+    "moved_to": "northsky.social"
+   },
+   {
+    "did": "did:plc:wtiyg7kt5vw2kpx24i2hanwm",
+    "status": {
+     "declared handle": "doopledi.eurosky.social",
+     "PDS endpoint": "inkcap.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-09-23T11:20:45.263Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T17:00:37.413Z",
+      "inkcap.us-east.host.bsky.network"
+     ],
+     [
+      "2026-04-15T09:11:29.763Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "inkcap.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-04-15T09:11:29.763Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:q2ze5khddpvyire34sv5om3h",
+    "status": {
+     "declared handle": "teun.town",
+     "PDS endpoint": "fibercap.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4mys545k2k",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-26T14:36:01.139Z",
+      "fibercap.us-west.host.bsky.network"
+     ],
+     [
+      "2026-03-05T21:00:23.724Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "fibercap.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-05T21:00:23.724Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:65xo52keq2vzu6lbw7isvsej",
+    "status": {
+     "declared handle": "isovitalismus.de",
+     "PDS endpoint": "rhizopogon.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2026-02-08T17:49:31.704Z",
+      "rhizopogon.us-west.host.bsky.network"
+     ],
+     [
+      "2026-05-11T01:34:38.064Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "rhizopogon.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-05-11T01:34:38.064Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:h6biiky6mo544zo2ay3wjjqe",
+    "status": {
+     "declared handle": "lockthewriter.blacksky.app",
+     "PDS endpoint": "porcini.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx2tfhhvtwth",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-01-14T08:38:39.949Z",
+      "porcini.us-east.host.bsky.network"
+     ],
+     [
+      "2025-10-04T01:48:09.174Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "porcini.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-10-04T01:48:09.174Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:2i26il2tlggbcfamysz57sqd",
+    "status": {
+     "declared handle": "nilhb.eurosky.social",
+     "PDS endpoint": "helvella.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-24T19:11:42.374Z",
+      "helvella.us-east.host.bsky.network"
+     ],
+     [
+      "2026-04-20T07:35:36.259Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "helvella.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-04-20T07:35:36.259Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:kl2uk2g23lftvpdq3hvu2kvx",
+    "status": {
+     "declared handle": "jeancattan.eurosky.social",
+     "PDS endpoint": "shimeji.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-06-28T20:39:05.092Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T04:09:17.651Z",
+      "shimeji.us-east.host.bsky.network"
+     ],
+     [
+      "2026-04-14T14:55:48.443Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "shimeji.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-04-14T14:55:48.443Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:75dkgvlry7j43jx2v3po7cax",
+    "status": {
+     "declared handle": "hawkinsweeks.eurosky.social",
+     "PDS endpoint": "inkcap.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4yhkejsd2t",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-07-09T18:29:31.613Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T23:13:24.786Z",
+      "inkcap.us-east.host.bsky.network"
+     ],
+     [
+      "2026-04-19T19:11:44.208Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "inkcap.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-04-19T19:11:44.208Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:3i6uzuatdyk7rwfkrybynf5j",
+    "status": {
+     "declared handle": "scanash.com",
+     "PDS endpoint": "margin.cafe",
+     "Active": "true",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx3fbwwrbn22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-06-15T03:05:36.366Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-08T23:40:23.698Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2025-10-04T21:32:41.140Z",
+      "blacksky.app"
+     ],
+     [
+      "2025-10-04T21:56:05.479Z",
+      "pds.scanash.com"
+     ],
+     [
+      "2025-11-10T02:14:46.125Z",
+      "blacksky.app"
+     ],
+     [
+      "2025-11-10T02:24:58.249Z",
+      "pds.scanash.com"
+     ],
+     [
+      "2025-11-13T11:04:07.157Z",
+      "blacksky.app"
+     ],
+     [
+      "2025-11-13T11:26:37.426Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2025-11-22T04:45:31.566Z",
+      "pds.scanash.com"
+     ],
+     [
+      "2025-12-05T12:29:55.728Z",
+      "cocoon.scanash.com"
+     ],
+     [
+      "2026-01-01T09:07:05.471Z",
+      "selfhosted.social"
+     ],
+     [
+      "2026-01-01T09:10:27.966Z",
+      "tophhie.social"
+     ],
+     [
+      "2026-01-01T09:10:30.666Z",
+      "pds.tophhie.cloud"
+     ],
+     [
+      "2026-01-01T09:29:01.220Z",
+      "bamboo.scanash.xyz"
+     ],
+     [
+      "2026-01-01T09:49:43.542Z",
+      "cocoon.scanash.com"
+     ],
+     [
+      "2026-01-01T10:34:16.308Z",
+      "pegasus.scanash.com"
+     ],
+     [
+      "2026-01-01T10:36:41.113Z",
+      "altq.net"
+     ],
+     [
+      "2026-01-01T10:37:16.923Z",
+      "northsky.social"
+     ],
+     [
+      "2026-01-01T10:44:42.648Z",
+      "bamboo.scanash.xyz"
+     ],
+     [
+      "2026-01-01T11:09:12.788Z",
+      "cocoon.scanash.com"
+     ],
+     [
+      "2026-01-02T08:00:12.205Z",
+      "tranquil.scanash.com"
+     ],
+     [
+      "2026-01-02T13:11:15.606Z",
+      "cocoon.scanash.com"
+     ],
+     [
+      "2026-03-24T11:34:03.528Z",
+      "margin.cafe"
+     ]
+    ],
+    "current_pds": "margin.cafe",
+    "jetstream_pds": "margin.cafe",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:wp6giejq7k7izulhbj27dxwe",
+    "status": {
+     "declared handle": "credibleexit.com",
+     "PDS endpoint": "inkcap.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mwy7bvzj2hiv",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-05-06T16:22:09.123Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T16:46:36.682Z",
+      "inkcap.us-east.host.bsky.network"
+     ],
+     [
+      "2026-03-18T00:28:15.587Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "inkcap.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-18T00:28:15.587Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:6cbrxnrfmwpb7rhjkihqezzh",
+    "status": {
+     "declared handle": "caesar.dev",
+     "PDS endpoint": "morel.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4x5vpix623",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-08-03T16:29:03.780Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T17:33:13.020Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2026-08-22T11:33:52.093Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "morel.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-08-22T11:33:52.093Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:dh74sr7cc6s2psd4nacdzbpc",
+    "status": {
+     "declared handle": "jamarmontez.com",
+     "PDS endpoint": "oyster.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4xtl2zu2q5",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-03-26T01:29:40.196Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T04:59:56.839Z",
+      "oyster.us-east.host.bsky.network"
+     ],
+     [
+      "2025-08-11T20:21:42.418Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "oyster.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-08-11T20:21:42.418Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:cpcqk4ry3smpnbkhehwe7oxa",
+    "status": {
+     "declared handle": "lukasmthum.eurosky.social",
+     "PDS endpoint": "lionsmane.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4msm4tcn23",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-12-01T08:20:34.692Z",
+      "lionsmane.us-east.host.bsky.network"
+     ],
+     [
+      "2026-03-08T10:48:54.111Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "lionsmane.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-08T10:48:54.111Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:hubo577f4nnnuxtxvzk5nb5j",
+    "status": {
+     "declared handle": "ivanbea.eu",
+     "PDS endpoint": "porcini.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx46o6umte2l",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-09-24T05:53:50.991Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T04:04:28.321Z",
+      "porcini.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-08T08:09:40.865Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "porcini.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-08T08:09:40.865Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:6aia7nixso6tjtnd2jnnrtqt",
+    "status": {
+     "declared handle": "chazonabaum.com",
+     "PDS endpoint": "lepista.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4yem5jltvl",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-02-04T17:32:37.151Z",
+      "lepista.us-west.host.bsky.network"
+     ],
+     [
+      "2025-10-03T23:29:50.659Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "lepista.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-10-03T23:29:50.659Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:e2ctbutx6kya6si4if5ngjmm",
+    "status": {
+     "declared handle": "jacky.wtf",
+     "PDS endpoint": "oyster.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx43ptlay7fq",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-04-20T16:35:26.337Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T16:12:48.143Z",
+      "oyster.us-east.host.bsky.network"
+     ],
+     [
+      "2025-08-07T20:32:47.749Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "oyster.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-08-07T20:32:47.749Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:34hu2z2o5x4z7ocf7fbk5txu",
+    "status": {
+     "declared handle": "aymeric.marlange.net",
+     "PDS endpoint": "puffball.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mwy7pizqaw23",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-12-24T07:11:00.616Z",
+      "puffball.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-25T12:35:31.286Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "puffball.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-25T12:35:31.286Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:eux43rcxizmducptittdg2id",
+    "status": {
+     "declared handle": "makuake.com.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 4h ago",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-01-30T04:01:48.909Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:4gvz4sw2tjz2nwogp43txd4y",
+    "status": {
+     "declared handle": "olivia.computer",
+     "PDS endpoint": "morel.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4yqnsc6ywq",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-07-05T00:29:19.579Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T02:12:27.680Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2025-10-03T19:40:10.433Z",
+      "blacksky.app"
+     ]
+    ],
+    "current_pds": "blacksky.app",
+    "jetstream_pds": "morel.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-10-03T19:40:10.433Z",
+    "moved_to": "blacksky.app"
+   },
+   {
+    "did": "did:plc:5dilluxdlwyq36dd2eybi3sc",
+    "status": {
+     "declared handle": "wim.lol",
+     "PDS endpoint": "panthercap.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mwyvw6fewz2k",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-13T09:42:52.967Z",
+      "panthercap.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-26T12:40:44.725Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "panthercap.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-26T12:40:44.725Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:aq7owa5y7ndc2hzjz37wy7ma",
+    "status": {
+     "declared handle": "tijs.org",
+     "PDS endpoint": "morel.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4xjpgtt72g",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-11-28T07:05:17.689Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2025-09-27T08:45:22.801Z",
+      "hamster.farm"
+     ],
+     [
+      "2026-03-05T20:01:51.184Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "morel.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-09-27T08:45:22.801Z",
+    "moved_to": "hamster.farm"
+   },
+   {
+    "did": "did:plc:vefimqqu5osdtkg6phv63dy7",
+    "status": {
+     "declared handle": "cainsan.eurosky.social",
+     "PDS endpoint": "shiitake.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx2lrjbehn2h",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-11-03T19:36:03.892Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T01:22:39.762Z",
+      "shiitake.us-east.host.bsky.network"
+     ],
+     [
+      "2026-05-08T17:34:51.105Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "shiitake.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-05-08T17:34:51.105Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:stogh3ooyol5uxlp3clo4qt5",
+    "status": {
+     "declared handle": "stratcommand.blog.gov.uk.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 21h ago",
+     "Backfill rev": "222223nem2z22",
+     "Latest rev": "222223nem2z22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-02-24T03:18:05.993Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:kqotnuk46jjuqk27eim6vmqg",
+    "status": {
+     "declared handle": "jcorvera.me",
+     "PDS endpoint": "shimeji.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4syflexz2s",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-09-20T16:00:12.970Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T04:26:46.670Z",
+      "shimeji.us-east.host.bsky.network"
+     ],
+     [
+      "2026-09-30T20:19:10.489Z",
+      "selfhosted.social"
+     ]
+    ],
+    "current_pds": "selfhosted.social",
+    "jetstream_pds": "shimeji.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-09-30T20:19:10.489Z",
+    "moved_to": "selfhosted.social"
+   },
+   {
+    "did": "did:plc:ign2srfqhn3ctchuuziqhngr",
+    "status": {
+     "declared handle": "esteraxiom.mom",
+     "PDS endpoint": "tranquil.madoka.systems",
+     "Active": "true",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx3ujk6yka22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2026-03-16T04:22:11.906Z",
+      "stropharia.us-west.host.bsky.network"
+     ],
+     [
+      "2026-04-06T21:09:06.549Z",
+      "pds.madoka.systems"
+     ],
+     [
+      "2026-09-04T00:20:04.810Z",
+      "tranquil-spaces.madoka.systems"
+     ],
+     [
+      "2026-09-08T23:16:55.845Z",
+      "tranquil.madoka.systems"
+     ]
+    ],
+    "current_pds": "tranquil.madoka.systems",
+    "jetstream_pds": "tranquil.madoka.systems",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:2jo5inbygq7qc5wnqeiskz77",
+    "status": {
+     "declared handle": "aytvill.eurosky.social",
+     "PDS endpoint": "morel.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx47dwmnbi2g",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-08-13T02:44:19.302Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-08T02:36:55.671Z",
+      "morel.us-east.host.bsky.network"
+     ],
+     [
+      "2026-05-31T09:25:28.482Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "morel.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-05-31T09:25:28.482Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:hswodym7gmavztvdx24wnrtm",
+    "status": {
+     "declared handle": "deandreamatias.com",
+     "PDS endpoint": "porcini.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "unknown",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-06-21T06:47:34.645Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T04:00:22.100Z",
+      "porcini.us-east.host.bsky.network"
+     ],
+     [
+      "2026-02-28T07:36:32.825Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "porcini.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-02-28T07:36:32.825Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:buzzbczjihozntflqjowdakk",
+    "status": {
+     "declared handle": "old-dog.eurosky.social",
+     "PDS endpoint": "conocybe.us-west.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4yfyrhdo2r",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-08-07T14:26:14.818Z",
+      "conocybe.us-west.host.bsky.network"
+     ],
+     [
+      "2026-04-16T14:58:28.405Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "conocybe.us-west.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-04-16T14:58:28.405Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:yhdhirizvwjrpodw6zfoitsp",
+    "status": {
+     "declared handle": "webchills.at",
+     "PDS endpoint": "oyster.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx2xhqhits2k",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-12-16T20:35:24.072Z",
+      "oyster.us-east.host.bsky.network"
+     ],
+     [
+      "2026-03-04T17:57:56.537Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "oyster.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-03-04T17:57:56.537Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:ra3gxl2udc22odfbvcfslcn3",
+    "status": {
+     "declared handle": "notnite.com",
+     "PDS endpoint": "lionsmane.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4vqvkr2q2i",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-09-09T19:21:37.533Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T00:01:26.359Z",
+      "lionsmane.us-east.host.bsky.network"
+     ],
+     [
+      "2025-07-25T06:48:44.048Z",
+      "pds.n2.pm"
+     ]
+    ],
+    "current_pds": "pds.n2.pm",
+    "jetstream_pds": "lionsmane.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2025-07-25T06:48:44.048Z",
+    "moved_to": "pds.n2.pm"
+   },
+   {
+    "did": "did:plc:zenb3an2xdn4vsee6axx2mqb",
+    "status": {
+     "declared handle": "tokyomotion.net.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 18h ago",
+     "Backfill rev": "unknown",
+     "Latest rev": "2222243hsuz22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-18T12:18:54.814Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:z4robb6y56mfm7qlt7snpren",
+    "status": {
+     "declared handle": "krystinanellis.com",
+     "PDS endpoint": "puffball.us-east.host.bsky.network",
+     "Active": "false",
+     "Backfill": "pending",
+     "Retries": "0",
+     "Last attempted": "never",
+     "Backfill rev": "unknown",
+     "Latest rev": "3mx4lgvh4ld2d",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-06-30T16:22:43.148Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-09T21:43:20.276Z",
+      "puffball.us-east.host.bsky.network"
+     ],
+     [
+      "2026-08-19T11:38:38.988Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "puffball.us-east.host.bsky.network",
+    "jetstream_host_is_current": false,
+    "moved_away_at": "2026-08-19T11:38:38.988Z",
+    "moved_to": "eurosky.social"
+   },
+   {
+    "did": "did:plc:ypdyxonplaslp7bwiuyh4wgf",
+    "status": {
+     "declared handle": "tamax31.hatenablog.com.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 8h ago",
+     "Backfill rev": "222223nemsz22",
+     "Latest rev": "222223nemsz22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-02-24T08:56:41.401Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   }
+  ]
+ },
+ "control": {
+  "fixture": "publication_present_in_archive_sample.txt",
+  "population": 912,
+  "summary": {
+   "n": 20,
+   "backfill": {
+    "complete": 20
+   },
+   "result": {
+    "null": 20
+   },
+   "pending": 0,
+   "pending_moved_before_archive_start": 0,
+   "pending_jetstream_host_is_current": 0,
+   "moved_between": null,
+   "moved_to": {},
+   "jetstream_pds_hosts": {},
+   "verification_unavailable": 20
+  },
+  "rows": [
+   {
+    "did": "did:plc:e2ddevmof7dlfq2mxkwmgded",
+    "status": {
+     "declared handle": "nealumphred.bsky.social",
+     "PDS endpoint": "earthstar.us-east.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 23h ago",
+     "Backfill rev": "3mte6uflg6e2x",
+     "Latest rev": "3mte6uflg6e2x",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-17T17:01:30.839Z",
+      "earthstar.us-east.host.bsky.network"
+     ]
+    ],
+    "current_pds": "earthstar.us-east.host.bsky.network",
+    "jetstream_pds": "earthstar.us-east.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:bdlnspwmocoy4kv7a52xd2l4",
+    "status": {
+     "declared handle": "kevinketchup.eurosky.social",
+     "PDS endpoint": "eurosky.social",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 4h ago",
+     "Backfill rev": "3mwnfpsqwkq2e",
+     "Latest rev": "3mwnfpsqwkq2e",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2026-06-20T17:39:25.855Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "eurosky.social",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:kz4dzrtofxi6tnfbkozz755f",
+    "status": {
+     "declared handle": "neslyshny.bsky.social",
+     "PDS endpoint": "woodtuft.us-west.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 1h ago",
+     "Backfill rev": "3mx2mn4s4jq2x",
+     "Latest rev": "3mx2mn4s4jq2x",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-12-16T17:39:16.690Z",
+      "woodtuft.us-west.host.bsky.network"
+     ]
+    ],
+    "current_pds": "woodtuft.us-west.host.bsky.network",
+    "jetstream_pds": "woodtuft.us-west.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:ialobn5fdawg6yb55vux7vzy",
+    "status": {
+     "declared handle": "w7th.com",
+     "PDS endpoint": "chanterelle.us-west.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 22h ago",
+     "Backfill rev": "3mqnlnlxxj72j",
+     "Latest rev": "3mqnlnlxxj72j",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-17T22:47:30.911Z",
+      "chanterelle.us-west.host.bsky.network"
+     ]
+    ],
+    "current_pds": "chanterelle.us-west.host.bsky.network",
+    "jetstream_pds": "chanterelle.us-west.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:bsari6o5clcvqt7vqm3qnteo",
+    "status": {
+     "declared handle": "frankm.bsky.social",
+     "PDS endpoint": "oyster.us-east.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 2h ago",
+     "Backfill rev": "3mwqnjmdpln2e",
+     "Latest rev": "3mwqnjmdpln2e",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-06-25T15:48:41.568Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-10T02:24:47.504Z",
+      "oyster.us-east.host.bsky.network"
+     ]
+    ],
+    "current_pds": "oyster.us-east.host.bsky.network",
+    "jetstream_pds": "oyster.us-east.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:bqfuadisaldfoubuchcbexlr",
+    "status": {
+     "declared handle": "saaste.net.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 8h ago",
+     "Backfill rev": "222223ydhum22",
+     "Latest rev": "222223ydhum22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-07-29T03:10:40.891Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:bdvxfrhxcrcj3zrvb4k2ekqv",
+    "status": {
+     "declared handle": "timtowle.bsky.social",
+     "PDS endpoint": "fibercap.us-west.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 12h ago",
+     "Backfill rev": "3mx23klcj3z2r",
+     "Latest rev": "3mx2aovau4r2d",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-29T22:36:54.336Z",
+      "fibercap.us-west.host.bsky.network"
+     ]
+    ],
+    "current_pds": "fibercap.us-west.host.bsky.network",
+    "jetstream_pds": "fibercap.us-west.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:au4vx6cydarfec25jvbvzr7f",
+    "status": {
+     "declared handle": "asalh.org.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 9h ago",
+     "Backfill rev": "222223she2322",
+     "Latest rev": "222223she2322",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-12-01T18:14:55.426Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:qmw3d2jhybatojnljiuicn7l",
+    "status": {
+     "declared handle": "edtimes.in.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 22h ago",
+     "Backfill rev": "222223zspq222",
+     "Latest rev": "222223zspq222",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-09-21T05:30:24.172Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:yi2r7sbcswyxzqyh6tbp24c2",
+    "status": {
+     "declared handle": "jnsh.me",
+     "PDS endpoint": "eurosky.social",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 3h ago",
+     "Backfill rev": "3mwocloeftv2e",
+     "Latest rev": "3mx2zxsiijp2r",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-07-04T19:06:52.795Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-13T17:00:50.750Z",
+      "shimeji.us-east.host.bsky.network"
+     ],
+     [
+      "2026-06-27T20:02:14.269Z",
+      "eurosky.social"
+     ]
+    ],
+    "current_pds": "eurosky.social",
+    "jetstream_pds": "eurosky.social",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:gtexxzrigmqxg7cdl2dx3kov",
+    "status": {
+     "declared handle": "vascomotaborges.bsky.social",
+     "PDS endpoint": "hollowfoot.us-west.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 13h ago",
+     "Backfill rev": "3muk34653662t",
+     "Latest rev": "3muk34653662t",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-03-02T20:21:01.815Z",
+      "hollowfoot.us-west.host.bsky.network"
+     ]
+    ],
+    "current_pds": "hollowfoot.us-west.host.bsky.network",
+    "jetstream_pds": "hollowfoot.us-west.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:ndbtzot3bejuvyywpewlqki6",
+    "status": {
+     "declared handle": "lime-time.de.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 23h ago",
+     "Backfill rev": "222223ywgvd22",
+     "Latest rev": "222223ywgvd22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-11-09T20:51:32.452Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:he4sjwbisrdbeieabamddmqx",
+    "status": {
+     "declared handle": "rooziato.com.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 3h ago",
+     "Backfill rev": "222223zusbl22",
+     "Latest rev": "2222243hqkb22",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2024-11-13T17:27:08.431Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:qp6prnmuouu6hj4xbuvcolhp",
+    "status": {
+     "declared handle": "ninjabluefyre.bsky.social",
+     "PDS endpoint": "lionsmane.us-east.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 21h ago",
+     "Backfill rev": "3mwz3jtpajv2i",
+     "Latest rev": "3mwzq2lownz27",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2023-10-15T22:05:03.709Z",
+      "bsky.social"
+     ],
+     [
+      "2023-11-12T23:12:29.949Z",
+      "lionsmane.us-east.host.bsky.network"
+     ]
+    ],
+    "current_pds": "lionsmane.us-east.host.bsky.network",
+    "jetstream_pds": "lionsmane.us-east.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:pf22vvtdq6qx7ufk3fire32j",
+    "status": {
+     "declared handle": "kirisyuu.bsky.social",
+     "PDS endpoint": "suillus.us-west.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 22h ago",
+     "Backfill rev": "3mwzwxjvyou26",
+     "Latest rev": "3mwzwxjvyou26",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-02-13T04:55:48.297Z",
+      "suillus.us-west.host.bsky.network"
+     ]
+    ],
+    "current_pds": "suillus.us-west.host.bsky.network",
+    "jetstream_pds": "suillus.us-west.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:3txdlshbgvwocwvtaqqoppkf",
+    "status": {
+     "declared handle": "poeful.bsky.social",
+     "PDS endpoint": "pioppino.us-west.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "45d 4h ago",
+     "Backfill rev": "3mvk52uazne2g",
+     "Latest rev": "3mvk52uazne2g",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2025-01-22T17:02:05.349Z",
+      "pioppino.us-west.host.bsky.network"
+     ]
+    ],
+    "current_pds": "pioppino.us-west.host.bsky.network",
+    "jetstream_pds": "pioppino.us-west.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:kopyvothugeb2fswdw53emlt",
+    "status": {
+     "declared handle": "fluxer.app.web.brid.gy",
+     "PDS endpoint": "atproto.brid.gy",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "46d 1h ago",
+     "Backfill rev": "222223rrda422",
+     "Latest rev": "222223rrda422",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2026-03-01T16:15:15.130Z",
+      "atproto.brid.gy"
+     ]
+    ],
+    "current_pds": "atproto.brid.gy",
+    "jetstream_pds": "atproto.brid.gy",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:3zqbcosmu2uxq4yd2dsrhder",
+    "status": {
+     "declared handle": "dava-wasab.selfhosted.social",
+     "PDS endpoint": "selfhosted.social",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 8h ago",
+     "Backfill rev": "3mtokzbixqi2c",
+     "Latest rev": "3mtokzbixqi2c",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2026-08-22T08:41:32.406Z",
+      "selfhosted.social"
+     ]
+    ],
+    "current_pds": "selfhosted.social",
+    "jetstream_pds": "selfhosted.social",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:inmerdqpxg462yn4pnwl3k2f",
+    "status": {
+     "declared handle": "chuuse.selfhosted.social",
+     "PDS endpoint": "selfhosted.social",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 8h ago",
+     "Backfill rev": "3mrq27gl5k22l",
+     "Latest rev": "3mrq27gl5k22l",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2026-07-13T22:33:30.894Z",
+      "selfhosted.social"
+     ]
+    ],
+    "current_pds": "selfhosted.social",
+    "jetstream_pds": "selfhosted.social",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   },
+   {
+    "did": "did:plc:73sug7skayzjuqbgo2f7vkjp",
+    "status": {
+     "declared handle": "cctvservices.bsky.social",
+     "PDS endpoint": "brittlegill.us-west.host.bsky.network",
+     "Active": "true",
+     "Backfill": "complete",
+     "Retries": "0",
+     "Last attempted": "44d 18h ago",
+     "Backfill rev": "3mx3fddms552h",
+     "Latest rev": "3mx3fddms552h",
+     "verification_error": "repo action rate limit exceeded",
+     "http_status": 200
+    },
+    "plc_error": null,
+    "plc_pds_history": [
+     [
+      "2026-10-04T17:30:39.636Z",
+      "brittlegill.us-west.host.bsky.network"
+     ]
+    ],
+    "current_pds": "brittlegill.us-west.host.bsky.network",
+    "jetstream_pds": "brittlegill.us-west.host.bsky.network",
+    "jetstream_host_is_current": true,
+    "moved_away_at": null,
+    "moved_to": null
+   }
+  ]
+ },
+ "checks": [
+  {
+   "name": "most absent repos are pending",
+   "pass": true,
+   "detail": "52/60 pending ({\"pending\":52,\"complete\":8})"
+  },
+  {
+   "name": "most pending absent repos left Jetstream's host before 2026-10-02",
+   "pass": true,
+   "detail": "50/52 moved, [\"2025-07-25\",\"2026-09-30\"], to {\"eurosky.social\":29,\"blacksky.app\":9,\"selfhosted.social\":3,\"npmx.social\":2,\"northsky.social\":2,\"jarrett.app\":1,\"pds.popbob.wtf\":1,\"app.leafplaza.eu\":1,\"hamster.farm\":1,\"pds.n2.pm\":1}"
+  },
+  {
+   "name": "control: most present repos are complete",
+   "pass": true,
+   "detail": "20/20 complete ({\"complete\":20})"
+  }
+ ]
+}
